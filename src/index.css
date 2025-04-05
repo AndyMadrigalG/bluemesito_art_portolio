@@ -1,0 +1,42 @@
+:root {
+  --bg-color: #0f0f0f;
+  --primary-glow: #00ffcc; /* Default glow color */
+  --text-color: #ffffff;
+  --dropdown-bg: #151515;
+  --dropdown-hover: #333333;
+  --dropdown-border: var(--primary-glow);
+  --footer-glow: var(--primary-glow);
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: var(--text-color);
+  text-shadow: 0 0 8px var(--primary-glow), 0 0 16px var(--primary-glow);
+  transition: text-shadow 0.3s ease-in-out;
+}
+
+select {
+  background-color: var(--dropdown-bg);
+  color: var(--text-color);
+  border: 2px solid var(--dropdown-border);
+  font-size: 1rem;
+  padding: 10px 15px;
+  border-radius: 15px; /* Modified corner radius */
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
