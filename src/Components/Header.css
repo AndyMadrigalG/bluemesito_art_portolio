@@ -1,0 +1,27 @@
+.header__nav {
+    display: flex;
+    gap: 2rem; /* Increased spacing between menu items */
+}
+
+.header__link {
+    text-decoration: none;
+    color: #fb8869; /* Ensure the font color matches the theme */
+    font-size: 1.1rem; /* Slightly larger font size for better visibility */
+    letter-spacing: 0.05em; /* Add letter spacing to improve readability */
+    transition: color 0.3s ease;
+}
+
+.header__link:hover {
+    color: #ff6f50; /* Lighter color on hover for visual feedback */
+}
+
+@media (max-width: 768px) {
+    .header__nav {
+        flex-direction: column; /* Stack links vertically on smaller screens */
+        gap: 1rem;
+    }
+
+    .header__link {
+        font-size: 1rem; /* Adjust size for better fit on small screens */
+    }
+}

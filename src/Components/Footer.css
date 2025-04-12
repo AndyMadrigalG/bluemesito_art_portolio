@@ -1,0 +1,16 @@
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #333333;
+  color: #fb8869; /* Updated */
+}
+
+.footer__links a {
+  color: #fb8869; /* Updated */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
