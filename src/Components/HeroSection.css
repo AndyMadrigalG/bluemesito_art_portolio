@@ -1,25 +1,58 @@
+/* Hero section styling */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff; /* Light background */
+}
+
+.hero__content {
+    margin-bottom: 20px;
+}
+
 .hero__title {
-    font-size: 2.5rem;
-    color: #fb8869; /* Updated */
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
 .hero__subtitle {
-    font-size: 1.2rem;
-    color: #fb8869; /* Updated */
-}
-
-.hero__button {
-    margin-top: 1.5rem;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    background-color: #0073e6; /* Leave button background color */
-    color: white; /* Button font color is white to stand out */
     font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
+    color: #666666;
+    margin-bottom: 20px;
 }
 
-.hero__button:hover {
-    background-color: #005bb5;
+/* Gallery section */
+.hero__gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    gap: 16px; /* Space between items */
+    justify-content: center; /* Center align the grid */
+    padding: 20px;
+}
+
+/* Individual gallery item */
+.hero__gallery-item {
+    position: relative;
+    width: 100%;
+    max-width: 598px; /* Limit maximum width */
+    padding-top: 100%; /* Forces a square aspect ratio */
+    background-color: #e1e1e1; /* Fallback background color */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+/* Images inside gallery */
+.hero__gallery-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 582px; /* Restrict image size to 598px */
+    max-height: 582px; /* Ensure it doesn’t exceed 598px in height */
+    object-fit: cover; /* Keeps the image fully covered inside the square */
+    border-radius: inherit; /* Matches parent border radius, if any */
 }
