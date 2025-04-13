@@ -1,58 +1,58 @@
-/* Hero section styling */
+/* Hero Section */
 .hero {
-    text-align: center;
-    padding: 20px;
-    background-color: #ffffff; /* Light background */
-}
-
-.hero__content {
-    margin-bottom: 20px;
-}
-
-.hero__title {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.hero__subtitle {
-    font-size: 1rem;
-    color: #666666;
-    margin-bottom: 20px;
-}
-
-/* Gallery section */
-.hero__gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
-    gap: 16px; /* Space between items */
-    justify-content: center; /* Center align the grid */
-    padding: 20px;
-}
-
-/* Individual gallery item */
-.hero__gallery-item {
-    position: relative;
-    width: 100%;
-    max-width: 582px; /* Limit maximum width */
-    padding-top: 100%; /* Forces a square aspect ratio */
-    background-color: #e1e1e1; /* Fallback background color */
-    overflow: hidden;
+    min-height: 100px;
+    padding: 4vw;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
-    border-radius: 8px; /* Optional rounded corners */
+    align-items: center;
+    background-color: #f9f9f9;
 }
 
-/* Images inside gallery */
+/* Responsive Gallery Grid */
+.hero__gallery {
+    display: grid; /* Use CSS Grid */
+    grid-column-gap: 1.75vw;
+    grid-row-gap: 1.75vw;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns by default (desktop) */
+    max-width: 1400px; /* Optional: Limit gallery width */
+    width: 100%;
+
+}
+
+/* Gallery Item */
+.hero__gallery-item {
+    /* Ensure all items are square */
+    position: relative; /* Maintain child control */
+    width: 100%;
+    padding-top: 100%; /* Aspect-ratio trick: 1:1 */
+    overflow: hidden; /* Clip overflowing content */
+    background-color: #e1e1e1; /* Placeholder background */
+    border-radius: 8px; /* Optional: Slightly rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Images Inside Gallery Items */
 .hero__gallery-image {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    max-width: 582px; /* Restrict image size to 598px */
-    max-height: 582px; /* Ensure it doesn’t exceed 598px in height */
-    object-fit: cover; /* Keeps the image fully covered inside the square */
-    border-radius: inherit; /* Matches parent border radius, if any */
+    object-fit: cover; /* Ensures image fits perfectly without distortion */
+    border-radius: 8px; /* Match parent's rounded corners */
+}
+
+/* Responsive Behavior */
+@media (max-width: 768px) {
+    .hero__gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 equal columns (tablet/small screens) */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero__gallery {
+        gap: 12px; /* Adjust gap for smaller screens */
+    }
 }

@@ -1,12 +1,12 @@
 .footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #333333;
-  color: #fb8869; /* Updated */
+  background-color: #ffffff;
+  color: #927ffd;
 }
 
 .footer__links a {
-  color: #fb8869; /* Updated */
+  color: #927ffd;
   text-decoration: none;
   margin: 0 0.5rem;
 }

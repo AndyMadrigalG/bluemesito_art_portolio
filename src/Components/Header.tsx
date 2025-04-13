@@ -1,13 +1,13 @@
 import React from 'react';
 import './Header.css';
-import logo from '../Assets/main_logo.png'; // Import the logo file
+import main_logo from '../Assets/main_logo.png'; // Import the logo file
 
 const Header: React.FC = () => {
     return (
         <header className="header">
             {/* Logo Section */}
             <div className="header__logo">
-                <img src={logo} alt="Site Logo" className="header__logo-image" />
+                <img src={main_logo} alt="Site Logo" className="header__logo-image" />
             </div>
 
             {/* Navigation Links */}
