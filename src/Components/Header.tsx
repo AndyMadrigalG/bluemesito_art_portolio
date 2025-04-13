@@ -26,13 +26,13 @@ const Header: React.FC = () => {
             {/* Social Media Icons */}
             <div className="header__social-media">
                 <a href="https://www.deviantart.com/bluemesito/gallery" target="_blank" rel="noopener noreferrer" className="header__social-link">
-                    <DevianArtIcon className="header__social-icon" />
+                    <DevianArtIcon style={{ fill: '#927ffd' }} className="header__social-icon" />
                 </a>
                 <a href="https://www.instagram.com/bluemesito" target="_blank" rel="noopener noreferrer" className="header__social-link">
-                    <InstagramIcon className="header__social-icon" />
+                    <InstagramIcon style={{ fill: '#927ffd' }} className="header__social-icon" />
                 </a>
                 <a href="https://www.pixiv.net/en/users/19455541" target="_blank" rel="noopener noreferrer" className="header__social-link">
-                    <PixivIcon className="header__social-icon" />
+                    <PixivIcon style={{ fill: '#927ffd' }} className="header__social-icon" />
                 </a>
             </div>
 
