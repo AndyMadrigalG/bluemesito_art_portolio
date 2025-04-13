@@ -1,8 +1,8 @@
 import React from 'react';
 import './HeroSection.css';
+import portrait from '../Assets/portrait.jpg'; // Import the logo file
 
 const HeroSection: React.FC = () => {
-    const imageSrc = "/Assets/portrait.jpg"; // Path to the portrait image
 
     return (
         <section className="hero">
@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
             <div className="hero__gallery">
                 {[...Array(4)].map((_, index) => (
                     <div className="hero__gallery-item" key={index}>
-                        <img src={imageSrc} alt={`Portrait ${index + 1}`} className="hero__gallery-image" />
+                        <img src={portrait} alt={`Portrait ${index + 1}`} className="hero__gallery-image" />
                     </div>
                 ))}
             </div>

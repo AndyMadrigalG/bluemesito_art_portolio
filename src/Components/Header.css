@@ -13,7 +13,8 @@
 }
 
 .header__logo-image {
-    max-height: 50px; /* Adjust size as needed */
+    max-width: 100%;
+    max-height: 105px; /* Adjust size as needed */
     width: auto; /* Maintain aspect ratio */
 }
 
@@ -24,13 +25,13 @@
 
 .header__link {
     text-decoration: none;
-    color: #fb8869;
+    color: #927ffd;
     font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .header__link:hover {
-    color: #ff6f50;
+    color: #6f5bcc;
 }
 
 /* Responsive for smaller screens */

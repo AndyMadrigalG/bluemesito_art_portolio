@@ -12,12 +12,12 @@ const Header: React.FC = () => {
 
             {/* Navigation Links */}
             <nav className="header__nav">
-                <a href="#illustration" className="header__link">Home</a>
-                <a href="#books" className="header__link">Illustrations</a>
-                <a href="#wallpapers" className="header__link">Wallpapers</a>
-                <a href="#prints" className="header__link">Online Shop</a>
-                <a href="#contact" className="header__link">Contact</a>
-                <a href="#about" className="header__link">About</a>
+                <a href="#illustration" className="header__link">HOME</a>
+                <a href="#books" className="header__link">ILLUSTRATIONS</a>
+                <a href="#wallpapers" className="header__link">WALLPAPERS</a>
+                <a href="#prints" className="header__link">STORE</a>
+                <a href="#contact" className="header__link">CONTACT</a>
+                <a href="#about" className="header__link">ABOUT</a>
             </nav>
         </header>
     );
