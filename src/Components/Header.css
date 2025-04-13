@@ -19,6 +19,9 @@
 }
 
 .header__nav {
+    text-align: right;
+    margin-left: auto;
+    padding-left: 5.5vw;
     display: flex;
     gap: 2rem;
 }
@@ -39,5 +42,38 @@
     .header__nav {
         flex-direction: column;
         gap: 1rem;
+        flex-wrap: wrap; /* Allow wrapping of header content */
+        justify-content: space-between; /* Proper alignment */
     }
+    .header__social-media {
+        margin-left: 0;
+        margin-top: 10px;
+        justify-content: center; /* Center icons on smaller screens */
+    }
+
+}
+
+/* Social Media Section */
+.header__social-media {
+    display: flex;
+    gap: 16px; /* Space between icons */
+    align-items: center;
+    margin-left: auto; /* Push social icons to the right */
+}
+
+.header__social-link {
+    display: inline-block;
+    text-decoration: none; /* Remove underline for links */
+}
+
+.header__social-icon {
+    width: 24px; /* Adjust size according to your design */
+    height: 24px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Add hover effect */
+.header__social-link:hover .header__social-icon {
+    transform: scale(1.1); /* Slight zoom effect on hover */
 }
