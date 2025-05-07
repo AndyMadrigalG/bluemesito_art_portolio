@@ -21,7 +21,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "start:prod": "serve -s build -l 4444",
+    "start:prod": "serve -s build -l 8080",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -3,7 +3,7 @@
 
 ARG NODE_VERSION=20
 ARG ALPINE_VERSION=3.17
-ARG PORT=3002
+ARG PORT=8080
 
 # Use node image and alpine as base for the image
 FROM node:${NODE_VERSION}-alpine${ALPINE_VERSION} AS builder

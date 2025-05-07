@@ -15,11 +15,11 @@ services:
       args:
         NODE_VERSION: 20
         ALPINE_VERSION: 3.17
-        PORT: 4444
+        PORT: 8080
     ports:
-      - "4444:4444" # Host port 8080 -> Container port 80
+      - "8080:8080" # Host port 8080 -> Container port 80
     environment:
-      - PORT=4444 # Pass environment variable to container
+      - PORT=8080 # Pass environment variable to container
 
 
 # The commented out section below is an example of how to define a PostgreSQL
