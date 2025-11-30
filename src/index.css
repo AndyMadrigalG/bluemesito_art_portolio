@@ -1,8 +1,10 @@
+@import 'global_variables.css';
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #f9f9f9; /* Retain background color */
-  color: #927ffd; /* Change text color globally */
+  background-color: transparent;
+  color: var(--color-primary); /* Change text color globally */
 }
 
 * {

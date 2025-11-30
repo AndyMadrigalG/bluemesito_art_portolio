@@ -1,0 +1,8 @@
+:root {
+  --color-primary: #927ffd;
+  --color-primary-hover: #6f5bcc;
+  --color-secondary: #ffffff;
+  --color-placeholder: #e1e1e1;
+  --color-background: #f9f9f9;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}

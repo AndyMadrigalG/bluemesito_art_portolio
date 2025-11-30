@@ -1,12 +1,14 @@
+@import '../global_variables.css';
+
 .footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: #ffffff;
-  color: #927ffd;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .footer__links a {
-  color: #927ffd;
+  color: var(--color-primary);
   text-decoration: none;
   margin: 0 0.5rem;
 }

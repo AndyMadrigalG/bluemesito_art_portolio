@@ -1,9 +1,11 @@
+@import '../global_variables.css';
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: transparent;
+    box-shadow: 0px 4px 10px var(--color-shadow);
     padding: 2.5vw 4vw;
 }
 
@@ -19,22 +21,45 @@
 }
 
 .header__nav {
-    text-align: right;
+    align-items: center;
     margin-left: auto;
-    padding-left: 5.5vw;
     display: flex;
-    gap: 2rem;
+    gap: 2rem; /* Space between nav links */
 }
 
 .header__link {
     text-decoration: none;
-    color: #927ffd;
-    font-size: 1rem;
-    transition: color 0.3s ease;
+    color: var(--color-primary);
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px; 
+    padding: 6px 0;
+    position: relative;
+    transition: color 160ms linear;
+    -webkit-font-smoothing: antialiased;
+}
+
+.header__link::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  bottom: -6px;
+  background: transparent;
+  transition: background-color 180ms linear, transform 180ms ease;
+  transform: scaleX(0);
+  transform-origin: left center;
 }
 
 .header__link:hover {
-    color: #6f5bcc;
+    color: var(--color-primary-hover);
+}
+
+.header__link:hover::after{
+  background: var(--color-primary-hover);
+  transform: scaleX(1);
 }
 
 /* Responsive for smaller screens */
