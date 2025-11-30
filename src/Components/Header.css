@@ -33,7 +33,6 @@
     font-size: 15 px;
     text-transform: uppercase;
     letter-spacing: 1.2px; 
-
     transition: color 160ms linear;
     -webkit-font-smoothing: antialiased;
 }
@@ -73,7 +72,6 @@
         margin-top: 10px;
         justify-content: center; /* Center icons on smaller screens */
     }
-
 }
 
 /* Social Media Section */
@@ -98,5 +96,5 @@
 
 /* Add hover effect */
 .header__social-link:hover .header__social-icon {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.5); /* Slight zoom effect on hover */
 }
