@@ -20,7 +20,6 @@
     grid-template-columns: repeat(4, 1fr); /* 4 equal columns by default (desktop) */
     max-width: 1400px; /* Optional: Limit gallery width */
     width: 100%;
-
 }
 
 /* Gallery Item */
