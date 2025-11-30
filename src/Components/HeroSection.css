@@ -12,16 +12,18 @@
 }
 
 .hero__gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+  grid-column-gap: 1.75vw;
+  grid-row-gap: 1.75vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
+  max-width: 1400px;
+  width: auto;
 }
 
 .hero__gallery-item {
   display: flex;
   flex-direction: column;
-
 }
 
 .hero__gallery-image {

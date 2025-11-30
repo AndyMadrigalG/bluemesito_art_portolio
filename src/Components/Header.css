@@ -77,9 +77,9 @@
 /* Social Media Section */
 .header__social-media {
     display: flex;
-    gap: 16px; /* Space between icons */
+    gap: 18px; /* Space between icons */
     align-items: center;
-    margin-left: auto; /* Push social icons to the right */
+    margin-left: 2.8vw; /* Push social icons to the right */
 }
 
 .header__social-link {
