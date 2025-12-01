@@ -1,8 +1,8 @@
 :root {
-  --color-primary: #927ffd;
-  --color-primary-hover: #6f5bcc;
-  --color-secondary: #ffffff;
-  --color-placeholder: #e1e1e1;
-  --color-background: #f9f9f9;
-  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color_primary: #927ffd;
+  --color_primary_hover: #6f5bcc;
+  --color_gradient_start: #2980b9;
+  --color_gradient_middle: #6dd5fa;
+  --color_gradient_end: #ffffff;
+  --color_footer: #a3b1c9;
 }

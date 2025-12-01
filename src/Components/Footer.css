@@ -3,16 +3,8 @@
 .footer {
   text-align: center;
   padding: 1.5rem;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  color: var(--color_footer);
 }
-
-.footer__links a {
-  color: var(--color-primary);
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-.footer__links a:hover {
-  text-decoration: underline;
+.footer p {
+  margin: 1rem 0;
 }

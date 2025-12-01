@@ -4,9 +4,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
-    box-shadow: 0px 4px 10px var(--color-shadow);
     padding: 2.5vw 4vw;
+}
+
+.header {
+    box-sizing: border-box;
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
 .header__logo {
@@ -15,9 +21,9 @@
 }
 
 .header__logo-image {
-    max-width: 100%;
-    max-height: 105px; /* Adjust size as needed */
     width: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    max-height: 105px;
 }
 
 .header__nav {
@@ -28,12 +34,13 @@
 }
 
 .header__link {
+    position: relative; /* Necesario para posicionar la línea */
     text-decoration: none;
-    color: var(--color-primary);
-    font-size: 15 px;
+    color: var(--color_primary);
     text-transform: uppercase;
-    letter-spacing: 1.2px; 
-    transition: color 160ms linear;
+    font-size: 1rem;
+    padding: 8px 12px;
+    transition: color 0.3s ease; /* Transición suave para el color */
     -webkit-font-smoothing: antialiased;
 }
 
@@ -51,11 +58,11 @@
 }
 
 .header__link:hover {
-    color: var(--color-primary-hover);
+    color: var(--color_primary_hover);
 }
 
 .header__link:hover::after{
-  background: var(--color-primary-hover);
+  background: var(--color_primary_hover);
   transform: scaleX(1);
 }
 
@@ -88,10 +95,15 @@
 }
 
 .header__social-icon {
+    fill: var(--color_primary);
     width: 24px; /* Adjust size according to your design */
     height: 24px;
     object-fit: contain;
     transition: transform 0.3s ease;
+}
+
+.header__social-icon:hover {
+    fill: var(--color_primary_hover); /* Cambia el color al pasar el mouse */
 }
 
 /* Add hover effect */

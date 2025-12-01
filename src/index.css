@@ -1,10 +1,12 @@
 @import 'global_variables.css';
 
 body {
+  padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: transparent;
   color: var(--color-primary); /* Change text color globally */
+  background: -webkit-linear-gradient(to top, var(--color_gradient_start), var(--color_gradient_middle), var(--color_gradient_end));   /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, var(--color_gradient_start), var(--color_gradient_middle), var(--color_gradient_end));   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 * {
