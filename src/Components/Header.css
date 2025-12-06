@@ -1,18 +1,12 @@
 @import '../global_variables.css';
 
 .header {
+    /* Ajuste de padding para móviles para no desperdiciar espacio */
+    padding: 1rem 5%; 
+    flex-wrap: wrap; /* Permite que el contenido fluya si falta espacio */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2.5vw 4vw;
-}
-
-.header {
-    box-sizing: border-box;
-    padding-top: 2.5vw;
-    padding-bottom: 2.5vw;
-    padding-left: 4vw;
-    padding-right: 4vw;
 }
 
 .header__logo {
@@ -68,16 +62,41 @@
 
 /* Responsive for smaller screens */
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .header__logo {
+        margin-bottom: 1.5rem; /* Separar logo del menú */
+    }
+
     .header__nav {
         flex-direction: column;
-        gap: 1rem;
-        flex-wrap: wrap; /* Allow wrapping of header content */
-        justify-content: space-between; /* Proper alignment */
+        width: 100%;
+        gap: 1.2rem; /* Más espacio para evitar toques accidentales */
+        margin: 0;
+        text-align: center;
     }
+
+    .header__link {
+        display: block; /* Ocupar más ancho para facilitar el clic */
+        padding: 10px;  /* Aumentar área táctil */
+        width: 100%;
+    }
+
     .header__social-media {
+        margin-top: 2rem;
         margin-left: 0;
-        margin-top: 10px;
-        justify-content: center; /* Center icons on smaller screens */
+        width: 100%;
+        justify-content: center;
+        gap: 2rem; /* Íconos más separados en móvil */
+    }
+    
+    /* Opcional: Hacer los iconos un poco más grandes en móvil */
+    .header__social-icon {
+        width: 28px;
+        height: 28px;
     }
 }
 

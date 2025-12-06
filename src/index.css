@@ -1,14 +1,20 @@
 @import 'global_variables.css';
 
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
+  overflow-x: hidden; /* Evita scroll horizontal accidental */
   font-family: Arial, sans-serif;
   color: var(--color-primary); /* Change text color globally */
   background: -webkit-linear-gradient(to top, var(--color_gradient_start), var(--color_gradient_middle), var(--color_gradient_end));   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, var(--color_gradient_start), var(--color_gradient_middle), var(--color_gradient_end));   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-* {
-  box-sizing: content-box;
 }

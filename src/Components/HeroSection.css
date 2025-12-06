@@ -2,38 +2,59 @@
 
 /* Hero Section */
 .hero {
-    min-height: 100px;
-    padding: 4vw;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-
+  min-height: 100px;
+  padding: 2rem 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%; /* Asegura que ocupe el ancho disponible */
 }
 
 .hero__gallery {
-  grid-column-gap: 1.75vw;
-  grid-row-gap: 1.75vw;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
+  /* Por defecto (Móviles primero): 1 columna */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem; /* Espacio entre elementos */
+  justify-items: center; /* Centra las tarjetas en su celda */
   max-width: 1400px;
-  width: auto;
+  width: 100%;
 }
 
 .hero__gallery-item {
   display: flex;
-  align-items: center;
-  text-align: left;
-  max-width: 300px;
   flex-direction: column;
+  align-items: center; /* Centrado en móvil */
+  text-align: center;  /* Texto centrado en móvil se ve mejor */
+  width: 100%;
+  max-width: 350px; /* Evita que se estiren demasiado en 1 sola columna */
 }
 
 .hero__gallery-image {
   aspect-ratio: 1 / 1; /* Mantiene un formato 1:1 cuadrado */
   object-fit: cover; /* Asegura que la imagen se recorte si es necesario */
   width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px var(--color_shadow); /* Un toque estético extra */
+}
+
+/* TABLETS (Pantallas medianas: >= 600px) */
+@media (min-width: 600px) {
+  .hero__gallery {
+    grid-template-columns: repeat(2, 1fr); /* 2 Columnas */
+  }
+}
+
+/* ESCRITORIO (Pantallas grandes: >= 1024px) */
+@media (min-width: 1024px) {
+  .hero__gallery {
+    grid-template-columns: repeat(4, 1fr); /* Volvemos a tus 4 columnas originales */
+  }
+  
+  .hero__gallery-item {
+    align-items: flex-start; /* Alineación original a la izquierda en PC */
+    text-align: left;
+  }
 }
 
 .hero__gallery-text {
@@ -41,7 +62,6 @@
 }
 
 .hero__gallery-description {
-  align-items: left;
   color: var(--color_primary);
   margin: 4px 0;
 }
