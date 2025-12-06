@@ -1,6 +1,6 @@
 {
   "name": "bluemesito_art_portfolio",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",

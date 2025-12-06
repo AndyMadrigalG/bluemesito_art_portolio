@@ -1,43 +1,55 @@
 @import '../global_variables.css';
 
 .header {
-    /* Ajuste de padding para móviles para no desperdiciar espacio */
-    padding: 1rem 5%; 
-    flex-wrap: wrap; /* Permite que el contenido fluya si falta espacio */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 2.5vw 4vw; /* Padding original */
+    position: relative;
+    z-index: 100;
+    background-color: transparent; /* O el color de fondo que desees */
 }
 
 .header__logo {
     display: flex;
     align-items: center;
+    z-index: 1002; /* Para que el logo siempre esté visible si quieres */
 }
 
 .header__logo-image {
-    width: auto; /* Maintain aspect ratio */
+    width: auto; 
     max-width: 100%;
     max-height: 105px;
 }
 
-.header__nav {
-    align-items: center;
-    margin-left: auto;
+/* --- ESTILOS DE ESCRITORIO --- */
+
+/* Contenedor que agrupa Nav y Social */
+.header__menu {
     display: flex;
-    gap: 2rem; /* Space between nav links */
+    align-items: center;
+    margin-left: auto; /* Empuja todo a la derecha */
+    gap: 2.8vw; /* Espacio entre Nav y Social */
+}
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem; 
 }
 
 .header__link {
-    position: relative; /* Necesario para posicionar la línea */
+    position: relative; 
     text-decoration: none;
     color: var(--color_primary);
     text-transform: uppercase;
     font-size: 1rem;
     padding: 8px 12px;
-    transition: color 0.3s ease; /* Transición suave para el color */
+    transition: color 0.3s ease; 
     -webkit-font-smoothing: antialiased;
 }
 
+/* Efecto de línea debajo del link (mismo de antes) */
 .header__link::after{
   content: "";
   position: absolute;
@@ -60,72 +72,131 @@
   transform: scaleX(1);
 }
 
-/* Responsive for smaller screens */
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        padding: 1rem;
-    }
-
-    .header__logo {
-        margin-bottom: 1.5rem; /* Separar logo del menú */
-    }
-
-    .header__nav {
-        flex-direction: column;
-        width: 100%;
-        gap: 1.2rem; /* Más espacio para evitar toques accidentales */
-        margin: 0;
-        text-align: center;
-    }
-
-    .header__link {
-        display: block; /* Ocupar más ancho para facilitar el clic */
-        padding: 10px;  /* Aumentar área táctil */
-        width: 100%;
-    }
-
-    .header__social-media {
-        margin-top: 2rem;
-        margin-left: 0;
-        width: 100%;
-        justify-content: center;
-        gap: 2rem; /* Íconos más separados en móvil */
-    }
-    
-    /* Opcional: Hacer los iconos un poco más grandes en móvil */
-    .header__social-icon {
-        width: 28px;
-        height: 28px;
-    }
-}
-
-/* Social Media Section */
 .header__social-media {
     display: flex;
-    gap: 18px; /* Space between icons */
+    gap: 18px; 
     align-items: center;
-    margin-left: 2.8vw; /* Push social icons to the right */
 }
 
 .header__social-link {
     display: inline-block;
-    text-decoration: none; /* Remove underline for links */
+    text-decoration: none;
 }
 
 .header__social-icon {
     fill: var(--color_primary);
-    width: 24px; /* Adjust size according to your design */
+    width: 24px; 
     height: 24px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
 .header__social-icon:hover {
-    fill: var(--color_primary_hover); /* Cambia el color al pasar el mouse */
+    fill: var(--color_primary_hover); 
 }
 
-/* Add hover effect */
 .header__social-link:hover .header__social-icon {
-    transform: scale(1.5); /* Slight zoom effect on hover */
+    transform: scale(1.5); 
+}
+
+/* Ocultar elementos móviles en escritorio */
+.header__toggle,
+.header__backdrop {
+    display: none;
+}
+
+/* --- ESTILOS RESPONSIVE (MÓVIL / TABLET) --- */
+@media (max-width: 768px) {
+    .header {
+        padding: 1rem 5%;
+    }
+
+    /* Botón Hamburguesa */
+    .header__toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        /* CORRECCIÓN: Z-index muy alto para estar siempre encima de todo */
+        z-index: 2001; 
+    }
+
+    .header__toggle-bar {
+        width: 100%;
+        height: 3px;
+        background-color: var(--color_primary);
+        border-radius: 10px;
+        transition: all 0.3s linear;
+        transform-origin: 1px;
+    }
+
+    /* Animación de Hamburguesa a "X" */
+    .header__toggle-bar.open:nth-child(1) {
+        transform: rotate(45deg);
+    }
+    .header__toggle-bar.open:nth-child(2) {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    .header__toggle-bar.open:nth-child(3) {
+        transform: rotate(-45deg);
+    }
+
+    /* MENÚ LATERAL (SIDEBAR) */
+    .header__menu {
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        max-width: 300px;
+        height: 100vh;
+        background-color: #ffffff;
+        box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        transition: right 0.3s ease-in-out;
+        /* CORRECCIÓN: Z-index alto, pero justo debajo del botón toggle. 
+           Al ser 2000, es mayor que el 1002 del logo, por lo que lo tapa. */
+        z-index: 2000; 
+        gap: 3rem;
+        margin-left: 0;
+    }
+
+    .header__menu.open {
+        right: 0; /* Deslizar hacia adentro */
+    }
+
+    .header__nav {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .header__social-media {
+        margin-left: 0; /* Resetear margen */
+        gap: 2rem; /* Iconos más separados para fácil toque */
+    }
+    
+    .header__social-icon {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* FONDO OSCURO (Backdrop) */
+    .header__backdrop.open {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        /* CORRECCIÓN: Z-index justo debajo del menú lateral */
+        z-index: 1999;
+        backdrop-filter: blur(2px);
+    }
 }
