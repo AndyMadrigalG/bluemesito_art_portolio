@@ -2,8 +2,8 @@ name: Deploy to Laptop Server
 
 on:
   push:
-  branches:
-    - main
+    branches:
+      - main
 
 jobs:
   build-and-deploy:
