@@ -8,20 +8,18 @@ on:
 jobs:
   build-and-deploy:
     runs-on: self-hosted
-
+    
     steps:
     - name: Check out code
       uses: actions/checkout@v4
-      with:
-        clean: false # no borramos todo solo actualizamos
-    
+
     - name: Setup Node.js
       uses: actions/setup-node@v4
       with:
         node-version: '20'
         cache: 'npm'
 
-    - name: Install Dependencies
+    - name: Install Dependencies (Runner)
       run: npm ci
 
     - name: Build Project
@@ -29,5 +27,16 @@ jobs:
       env:
         CI: false
 
-    - name: Restart Application
-      run: pm2 reload bluemesito
+    - name: Publish to Live Site
+      run: |
+        # 1. Definir la carpeta real
+        LIVE_DIR="/home/andy/Documents/GitHub/bluemesito_art_portolio"
+        
+        # 2. Borrar la carpeta 'build' vieja del sitio real (por limpieza)
+        rm -rf "$LIVE_DIR/build"
+        
+        # 3. Copiar la carpeta 'build' recién creada por el runner al sitio real
+        cp -r build "$LIVE_DIR/"
+        
+        # 4. Reiniciar PM2 para asegurar que sirva los nuevos archivos
+        pm2 reload bluemesito
