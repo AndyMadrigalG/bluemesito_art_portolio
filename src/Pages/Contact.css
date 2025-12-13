@@ -1,0 +1,132 @@
+@import '../global_variables.css';
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+  gap: 4rem;
+  align-items: center;
+}
+
+/* Sección Izquierda (Texto y Formulario) */
+.contact-info h1 {
+  color: var(--color_primary);
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-email {
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+/* Estilos del Formulario */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: var(--color_primary);
+  margin-bottom: 0.5rem;
+}
+
+.form-input, 
+.form-textarea {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.form-input:focus, 
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color_primary);
+  box-shadow: 0 0 5px rgba(146, 127, 253, 0.2);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: var(--color_primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+  align-self: flex-start; /* Botón a la izquierda */
+}
+
+.submit-btn:hover {
+  background-color: var(--color_primary_hover);
+  transform: translateY(-2px);
+}
+
+/* Sección Derecha (Imagen) */
+.contact-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-illustration {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  /* Animación flotante suave */
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr; /* Una sola columna */
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .form-group {
+    text-align: left; /* Mantener etiquetas alineadas a la izquierda */
+  }
+
+  .submit-btn {
+    width: 100%; /* Botón ancho completo en móvil */
+  }
+
+  .contact-image-wrapper {
+    order: -1; /* Pone la imagen arriba del formulario en móvil */
+    margin-bottom: 1rem;
+  }
+  
+  .contact-illustration {
+    max-width: 300px; /* Imagen más pequeña en móvil */
+  }
+}

@@ -1,4 +1,5 @@
-import React, { useState } from 'react'; // Importamos useState
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom'; // IMPORTANTE: Importar Link
 import './Header.css';
 import main_logo from '../Assets/main_logo.png';
 import { ReactComponent as DevianArtIcon } from '../Assets/deviantart.svg';
@@ -10,22 +11,17 @@ const Header: React.FC = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     // Función para alternar el menú
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
-    };
-
+    const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     // Función para cerrar el menú al hacer clic en un enlace
-    const closeMenu = () => {
-        setIsMenuOpen(false);
-    };
+    const closeMenu = () => setIsMenuOpen(false);
 
     return (
         <header className="header">
             {/* Logo Section */}
             <div className="header__logo">
-                <a href="/" onClick={closeMenu}>
+                <Link to="/" onClick={closeMenu}>
                     <img src={main_logo} alt="Blue Mesito Logo" className="header__logo-image" />
-                </a>
+                </Link>
             </div>
 
             {/* BOTÓN HAMBURGUESA (Solo visible en móvil) */}
@@ -36,10 +32,7 @@ const Header: React.FC = () => {
             </div>
 
             {/* FONDO OSCURO (Backdrop) al abrir el menú */}
-            <div 
-                className={`header__backdrop ${isMenuOpen ? 'open' : ''}`} 
-                onClick={closeMenu}
-            ></div>
+            <div className={`header__backdrop ${isMenuOpen ? 'open' : ''}`} onClick={closeMenu}></div>
 
             {/* CONTENEDOR DEL MENÚ (Agrupa Nav y Social) */}
             {/* En escritorio se ve normal, en móvil se convierte en el sidebar */}
@@ -47,11 +40,12 @@ const Header: React.FC = () => {
                 
                 {/* Navigation Links */}
                 <nav className="header__nav">
-                    <a href="#illustration" className="header__link" onClick={closeMenu}>ILLUSTRATIONS</a>
-                    <a href="#patreon" className="header__link" onClick={closeMenu}>PATREON</a>
-                    <a href="#prints" className="header__link" onClick={closeMenu}>PRINT STORE</a>
-                    <a href="#contact" className="header__link" onClick={closeMenu}>CONTACT</a>
-                    <a href="#about" className="header__link" onClick={closeMenu}>ABOUT</a>
+                    <Link to="/" className="header__link" onClick={closeMenu}>HOME</Link>
+                    <Link to="/about" className="header__link" onClick={closeMenu}>ABOUT</Link>
+                    <Link to="/contact" className="header__link" onClick={closeMenu}>CONTACT</Link>
+                    {/* Enlaces externos pueden seguir siendo <a> si llevan a otro sitio, ej: Patreon */}
+                    <a href="https://patreon.com" target="_blank" rel="noreferrer" className="header__link" onClick={closeMenu}>PATREON</a>
+                    <a href="https://inprnt.com" target="_blank" rel="noreferrer" className="header__link" onClick={closeMenu}>PRINTS</a>
                 </nav>
 
                 {/* Social Media Icons */}

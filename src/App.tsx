@@ -1,21 +1,30 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import HeroSection from './Components/HeroSection';
 import Footer from './Components/Footer';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
 import './App.css';
 
 const App: React.FC = () => {
     return (
-        <div className="app">
-            <Header />
-
-            {/* Add this <main> wrapping your content */}
-            <main>
-                <HeroSection />
-            </main>
-
-            <Footer />
-        </div>
+        <Router>
+            <div className="app">
+                <Header />
+                <main>
+                    <Routes>
+                        {/* Página de Inicio (HeroSection actual) */}
+                        <Route path="/" element={<HeroSection />} />
+                        
+                        {/* Nuevas Páginas */}
+                        <Route path="/about" element={<About />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </main>
+                <Footer />
+            </div>
+        </Router>
     );
 };
 

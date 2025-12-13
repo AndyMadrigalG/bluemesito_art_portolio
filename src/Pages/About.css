@@ -1,0 +1,90 @@
+@import '../global_variables.css';
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  min-height: 80vh; /* Ocupa buena altura en pantallas grandes */
+}
+
+/* Imagen de perfil circular */
+.about-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 8px solid white; /* Borde blanco estilo sticker */
+  box-shadow: 0 10px 25px var(--color_shadow);
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.02);
+}
+
+/* Contenido de texto */
+.about-content {
+  flex: 1.5;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  color: var(--color_primary);
+  margin-bottom: 1.5rem;
+}
+
+.about-subtitle {
+  font-weight: bold;
+  color: var(--color_gradient_start); /* Usamos azul del gradiente */
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.clients-list {
+  margin-top: 2rem;
+}
+
+.clients-list h3 {
+  color: var(--color_primary_hover);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.clients-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.clients-list li {
+  margin-bottom: 0.25rem;
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablets (iPads) y Móviles */
+@media (max-width: 900px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+  }
+
+  .about-image {
+    width: 250px;
+    height: 250px;
+  }
+}
