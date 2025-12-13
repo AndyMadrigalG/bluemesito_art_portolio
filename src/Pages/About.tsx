@@ -12,12 +12,12 @@ const About: React.FC = () => {
       
       <div className="about-content">
         <h1 className="about-title">Blue Mesito</h1>
-        <span className="about-subtitle">Illustrator & Character Designer based in [Ciudad/País]</span>
+        <span className="about-subtitle">Illustrator & Character Designer based in Costa Rica</span>
         
         <p>
-          Hi! I'm an artist who loves creating magical worlds and charming characters. 
-          While I specialize in digital illustration, I also have experience in [Otras habilidades].
-          My work is heavily inspired by [Inspiraciones, ej: anime, nature, fantasy].
+          Hi! I'm an artist who loves creating magical worlds and charming characters.
+          While I specialize in digital illustration, I also have experience in Brand Design.
+          My work is heavily inspired by anime, nature and fantasy themes.
         </p>
         <p>
           I strive to bring warmth and joy through my art, focusing on storytelling 
@@ -27,9 +27,10 @@ const About: React.FC = () => {
         <div className="clients-list">
           <h3>Clients Include</h3>
           <ul>
-            <li>• Penguin Random House</li>
-            <li>• Example Client Two</li>
-            <li>• Indie Game Studio</li>
+            <li>• Walt Disney Company</li>
+            <li>• Ghibli Studios</li>
+            <li>• Aniplex</li>
+            <li>• Mappa</li>
           </ul>
         </div>
       </div>

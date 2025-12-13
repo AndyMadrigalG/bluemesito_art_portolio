@@ -14,7 +14,7 @@ const Contact: React.FC = () => {
           For commissions, business inquiries, or just to say hello, 
           please fill out the form below or email me directly at:
         </p>
-        <span className="contact-email">contact@bluemesito.com</span>
+        <span className="contact-email">bluemesito@gmail.com</span>
 
         <form className="contact-form">
           <div className="form-group">
