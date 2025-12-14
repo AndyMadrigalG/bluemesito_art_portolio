@@ -1,9 +1,20 @@
 :root {
-  --color_primary: #927ffd;
-  --color_primary_hover: #6f5bcc;
-  --color_gradient_start: #2980b9;
-  --color_gradient_middle: #6dd5fa;
-  --color_gradient_end: #ffffff;
-  --color_footer: #a3b1c9;
-  --color_shadow: rgba(0, 0, 0, 0.1);
+  /* Colores principales */
+  --color_primary: #8ba9fa;
+  --color_primary_hover: #627ff4;
+  --color_secondary: #617ef4;
+  
+  /* Colores del gradiente */
+  --color_gradient_start: #659CDA;
+  --color_gradient_middle: #DDE4F0;
+  --color_gradient_end: #FFFFFF;
+  
+  /* Colores del hero section */
+  --color_hero_gradient_start: #DDE4F0;
+  --color_hero_gradient_end: #DDE4F0;
+  --color_hero_shadow_dark: rgba(0, 0, 0, 0.3);
+
+  /* Colores secundarios */
+  --color_footer: #FFFFFF;
+  --color_shadow: rgba(0, 0, 0, 0.2);
 }
