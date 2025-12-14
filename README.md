@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Bluemesito Art Portfolio
+A modern, responsive art portfolio website built with React, showcasing the creative work of Bluemesito
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🎨 About
 
-## Available Scripts
+This is a portfolio website featuring:
+- **Gallery Homepage**: Showcasing different art categories
+- **About Page**: Information about the artist
+- **Contact Page**: A form to get in touch with the artist
+- **Responsive Design**: Optimized for mobile, tablet, and desktop viewing
+- **Social Media Integration**: Quick links to DeviantArt, Instagram, and Pixiv
 
-In the project directory, you can run:
+## 🛠️ Built With
 
-### `npm start`
+- **React 19** - Frontend framework
+- **TypeScript** - Type-safe JavaScript
+- **React Router DOM** - Client-side routing
+- **CSS3** - Custom styling with CSS variables
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📋 Prerequisites
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Node.js (v16 or higher recommended)
+- npm (comes with Node.js)
 
-### `npm test`
+## 💻 Local Setup
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository and go into that folder:
 
-### `npm run build`
+    ```bash
+    git clone https://github.com/AndyMadrigalG/bluemesito_art_portolio.git
+    cd bluemesito_art_portolio
+    ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. To install dependencies, just run:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ### `npm install`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Compile the app under the `build` folder
+    
+    ### `npm run build`
 
-### `npm run eject`
+    The build is minified and the filenames include the hashes, this command correctly bundles React in production mode and optimizes the build for the best performance
+    
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+4. Start the server, you can run any of these commands:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ### `npm run start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    Runs the app in the development mode, which means that the page will automatically reload if you make edits. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+    ### `npm run start:test`
 
-## Learn More
+    Runs the app for testing, the page wont automatically reload if you make edits. Open [http://localhost:8080](http://localhost:8080) to view it in the browser
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ### `npm run start:prod`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Runs the app in the prod environment, the page will use `build` folder. Open [http://localhost:4000](http://localhost:4000) to view it in the browser
+
+
+## 🚀 Deployment
+
+The process to deploy into production has been automated with GitHub Actions\
+Every time we merge new changes to the `main` branch, its being deployed to the production environment
+
+## ⭐ Live in Production
+
+Visit [https://bluemesito.com](https://bluemesito.com)
