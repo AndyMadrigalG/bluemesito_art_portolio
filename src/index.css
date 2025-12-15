@@ -15,6 +15,5 @@ body {
   overflow-x: hidden; /* Evita scroll horizontal accidental */
   font-family: Arial, sans-serif;
   color: var(--color_primary); /* Change text color globally */
-  background: -webkit-linear-gradient(to top, var(--color_gradient_start), var(--color_gradient_middle), var(--color_gradient_end));   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, var(--color_gradient_start), var(--color_gradient_middle), var(--color_gradient_end));   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(to bottom, #ffffff, #fafafc, #f4f4f9, #eeeff7, #e7eaf4, #dbe1f1, #cfd9ee, #c2d1eb, #adc3e7, #97b6e3, #7fa9de, #659cda);
 }

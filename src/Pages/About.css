@@ -35,7 +35,7 @@
 /* Contenido de texto */
 .about-content {
   flex: 1.5;
-  color: #555;
+  color: var(--color_about_text);
   font-size: 1.1rem;
   line-height: 1.6;
 }

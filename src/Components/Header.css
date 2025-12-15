@@ -154,7 +154,7 @@
         width: 70%;
         max-width: 300px;
         height: 100vh;
-        background-color: #ffffff;
+        background-color: var(--color_header_menu);
         box-shadow: -2px 0 15px rgba(0, 0, 0, 0.1);
         padding: 2rem;
         transition: right 0.3s ease-in-out;

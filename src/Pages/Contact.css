@@ -19,7 +19,7 @@
 
 .contact-email {
   font-weight: bold;
-  color: #333;
+  color: var(--color_contact_text);
   margin-bottom: 2rem;
   display: block;
 }
@@ -96,7 +96,7 @@
   max-width: 500px;
   height: auto;
   /* Animación flotante suave */
-  animation: float 6s ease-in-out infinite;
+  animation: float 4s ease-in-out infinite;
 }
 
 @keyframes float {

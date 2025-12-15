@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
 // Usamos star_machine como placeholder de la ilustración decorativa
-import illustration from '../Assets/star_machine.png'; 
+import contact_illustration from '../Assets/starmachine_transparent.png'; 
 
 const Contact: React.FC = () => {
   return (
@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
       
       {/* Columna Izquierda: Formulario */}
       <div className="contact-info">
-        <h1>Drop me a line!</h1>
+        <h1>Send me a request!</h1>
         <p>
           For commissions, business inquiries, or just to say hello, 
           please fill out the form below or email me directly at:
@@ -38,7 +38,7 @@ const Contact: React.FC = () => {
 
       {/* Columna Derecha: Ilustración */}
       <div className="contact-image-wrapper">
-        <img src={illustration} alt="Decorative illustration" className="contact-illustration" />
+        <img src={contact_illustration} alt="Decorative illustration" className="contact-illustration" />
       </div>
 
     </div>
