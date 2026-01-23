@@ -12,8 +12,18 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  min-height: 100vh;
   overflow-x: hidden; /* Evita scroll horizontal accidental */
   font-family: Arial, sans-serif;
-  color: var(--color_primary); /* Change text color globally */
-  background-image: linear-gradient(to bottom, #ffffff, #fafafc, #f4f4f9, #eeeff7, #e7eaf4, #dbe1f1, #cfd9ee, #c2d1eb, #adc3e7, #97b6e3, #7fa9de, #659cda);
+  color: var(--color_primary); /* Color de texto principal */
+  background-image: linear-gradient( /* Gradiente comienza con un azul vibrante y termina en un rosado muy pálido */
+    to bottom,
+    #FDEAEA 0%,    /* 5CA0F0 Azul celeste vibrante (parte superior) */
+    #E0F1FD 40%,   /* 9BCDF8 Azul medio suave */
+    #9BCDF8 75%,   /* E0F1FD Azul muy pálido / Blanco aireado */
+    #5CA0F0 100%   /* FDEAEA Rosado pastel sutil (horizonte) */
+  );
+
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }

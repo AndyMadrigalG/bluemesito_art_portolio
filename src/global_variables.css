@@ -1,18 +1,18 @@
 :root {
-  /* Colores principales */
-  --color_primary: #8ba9fa;
-  --color_primary_hover: #627ff4;
-  --color_secondary: #617ef4;
-  
+  /* Colores principales - basados en el gradiente */
+  --color_primary: #5CA0F0;           /* Azul vibrante del gradiente */
+  --color_primary_hover: #3D8BE8;     /* Azul más oscuro para hover */
+  --color_secondary: #4A90E2;         /* Azul intermedio */
+ 
   /* Colores del hero section */
-  --color_hero_gradient_start: #DDE4F0;
-  --color_hero_gradient_end: #DDE4F0;
-  --color_hero_shadow_dark: rgba(0, 0, 0, 0.3);
+  --color_hero_gradient_start: #E0F1FD;  /* Azul muy claro del gradiente */
+  --color_hero_gradient_end: #FDEAEA;    /* Rosa pálido del gradiente */
+  --color_hero_shadow_dark: rgba(92, 160, 240, 0.25); /* Sombra con tinte azul */
 
   /* Colores secundarios */
   --color_header_menu: #FFFFFF;
-  --color_about_text: #555;
-  --color_contact_text: #8ba9fa;;
-  --color_footer: #FFFFFF;
-  --color_shadow: rgba(0, 0, 0, 0.2);
+  --color_about_text: #4A6B8A;           /* Gris azulado para mejor legibilidad */
+  --color_contact_text: #5CA0F0;         /* Azul vibrante */
+  --color_footer: #FFFFFF;               /* Blanco para el footer */
+  --color_shadow: rgba(92, 160, 240, 0.2); /* Sombras con tinte azul suave */
 }
