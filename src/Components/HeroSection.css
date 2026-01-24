@@ -28,6 +28,8 @@
   text-align: center;  /* Texto centrado en móvil se ve mejor */
   width: 100%;
   max-width: 350px; /* Evita que se estiren demasiado en 1 sola columna */
+  text-decoration: none; /* Elimina subrayado de enlaces */
+  cursor: pointer; /* cambia el cursor */
 }
 
 .hero__gallery-image {
@@ -36,6 +38,12 @@
   width: 100%;
   border-radius: 12px;
   box-shadow: 0 4px 6px var(--color_shadow);
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.hero__gallery-item:hover .hero__gallery-image {
+  opacity: 0.6;
 }
 
 .hero__gallery-text {
@@ -66,10 +74,6 @@
   font-size: 1.1rem;
   margin: 0;
   line-height: 1.2;
-}
-
-.hero__gallery-item:hover .hero__gallery-text {
-  opacity: 1;
 }
 
 /* TABLETS (Pantallas medianas: >= 600px) */

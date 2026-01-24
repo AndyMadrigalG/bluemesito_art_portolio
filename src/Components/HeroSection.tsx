@@ -1,4 +1,5 @@
 import './HeroSection.css';
+import { Link } from 'react-router-dom';
 import mei_portrait from '../Assets/mei_portrait.jpg';
 import fungi_girls from '../Assets/fungi_girls.png';
 import magical_portal from '../Assets/magical_portal.png';
@@ -16,12 +17,12 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero__gallery">
         {galleryItems.map(({ id, image_source, description }) => (
-          <div key={id} className="hero__gallery-item">
+          <Link to={"/about"} key={id} className="hero__gallery-item">
             <img src={image_source} alt={description} className="hero__gallery-image" />
             <div className="hero__gallery-text">
               <p className="hero__gallery-description">{description}</p>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
