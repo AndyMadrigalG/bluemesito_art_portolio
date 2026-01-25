@@ -1,0 +1,179 @@
+@import '../global_variables.css';
+
+.gallery-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  min-height: 80vh;
+}
+
+/* Header de la galería */
+.gallery-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  color: var(--color_primary);
+  margin-bottom: 0.5rem;
+}
+
+.gallery-subtitle {
+  color: var(--color_about_text);
+  font-size: 1.1rem;
+}
+
+/* Grid de la galería - Masonry con CSS columns */
+.gallery-grid {
+  column-count: 4;
+  column-gap: 1.5rem;
+}
+
+/* Cada item de la galería */
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--color_hero_gradient_start), var(--color_hero_gradient_end));
+  box-shadow: 0 4px 15px var(--color_shadow);
+ 
+  /* Estado inicial para la animación (invisible) */
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out, box-shadow 0.3s ease;
+}
+
+/* Estado visible (cuando entra al viewport) */
+.gallery-item.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover effect en el item */
+.gallery-item:hover {
+  box-shadow: 0 8px 30px var(--color_hero_shadow_dark);
+  transform: translateY(-5px) scale(1.02);
+}
+
+/* Las imágenes */
+.gallery-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.05);
+}
+
+/* Overlay con el título (opcional) */
+.gallery-item-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.5rem 1rem;
+  background: linear-gradient(to top, rgba(92, 160, 240, 0.9), transparent);
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-item-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.gallery-item-title {
+  color: var(--color_header_menu);
+  font-weight: 600;
+  font-size: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- RESPONSIVE --- */
+
+/* Tablets grandes */
+@media (max-width: 1200px) {
+  .gallery-grid {
+    column-count: 3;
+  }
+}
+
+/* Tablets */
+@media (max-width: 900px) {
+  .gallery-container {
+    padding: 2rem 1.5rem;
+  }
+
+  .gallery-grid {
+    column-count: 2;
+    column-gap: 1rem;
+  }
+
+  .gallery-item {
+    margin-bottom: 1rem;
+  }
+
+  .gallery-title {
+    font-size: 2rem;
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .gallery-container {
+    padding: 1.5rem 1rem;
+  }
+
+  .gallery-grid {
+    column-count: 2;
+    column-gap: 0.75rem;
+  }
+
+  .gallery-item {
+    margin-bottom: 0.75rem;
+    border-radius: 8px;
+  }
+
+  .gallery-header {
+    margin-bottom: 2rem;
+  }
+
+  .gallery-title {
+    font-size: 1.75rem;
+  }
+
+  .gallery-subtitle {
+    font-size: 1rem;
+  }
+
+  /* Animación más sutil en móvil para mejor performance */
+  .gallery-item {
+    transform: translateY(20px);
+  }
+ 
+  .gallery-item.visible {
+    transform: translateY(0);
+  }
+
+  .gallery-item:hover {
+    transform: none;
+  }
+}
+
+/* Animación de entrada escalonada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}

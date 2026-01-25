@@ -17,7 +17,7 @@ const HeroSection = () => {
     <section className="hero">
       <div className="hero__gallery">
         {galleryItems.map(({ id, image_source, description }) => (
-          <Link to={"/about"} key={id} className="hero__gallery-item">
+          <Link to={"/gallery"} key={id} className="hero__gallery-item">
             <img src={image_source} alt={description} className="hero__gallery-image" />
             <div className="hero__gallery-text">
               <p className="hero__gallery-description">{description}</p>

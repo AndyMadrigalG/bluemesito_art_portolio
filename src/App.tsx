@@ -5,6 +5,7 @@ import HeroSection from './Components/HeroSection';
 import Footer from './Components/Footer';
 import About from './Pages/About';
 import Contact from './Pages/Contact';
+import Gallery from './Pages/Gallery';
 import './App.css';
 
 const App: React.FC = () => {
@@ -20,6 +21,7 @@ const App: React.FC = () => {
                         {/* Nuevas Páginas */}
                         <Route path="/about" element={<About />} />
                         <Route path="/contact" element={<Contact />} />
+                        <Route path="/gallery" element={<Gallery />} />
                     </Routes>
                 </main>
                 <Footer />
