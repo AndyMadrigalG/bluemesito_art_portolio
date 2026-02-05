@@ -59,8 +59,8 @@ const Gallery: React.FC = () => {
         });
       },
       {
-        threshold: 0.1, // Se activa cuando el 10% de la imagen es visible
-        rootMargin: '50px', // Empieza la animación un poco antes de que llegue al viewport
+        threshold: 0.05, // Menor threshold para detectar antes
+        rootMargin: '100px', // Cargar antes de que llegue al viewport
       }
     );
 

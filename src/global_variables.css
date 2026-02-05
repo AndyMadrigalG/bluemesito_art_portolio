@@ -11,8 +11,8 @@
 
   /* Colores secundarios */
   --color_header_menu: #FFFFFF;
-  --color_about_text: #4A6B8A;           /* Gris azulado para mejor legibilidad */
-  --color_contact_text: #5CA0F0;         /* Azul vibrante */
+  --color_about_text: #5CA0F0;           /* color_primary Azul vibrante */
+  --color_contact_text: #5CA0F0;         /* color_primary Azul vibrante */
   --color_footer: #FFFFFF;               /* Blanco para el footer */
   --color_shadow: rgba(92, 160, 240, 0.2); /* Sombras con tinte azul suave */
 }
