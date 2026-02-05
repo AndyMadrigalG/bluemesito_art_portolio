@@ -1,21 +1,21 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './Gallery.css';
 
-import illustration1 from '../Assets/fungi_girls.png';
-import illustration2 from '../Assets/magical_portal.png';
-import illustration3 from '../Assets/star_machine.png';
-import illustration4 from '../Assets/mei_portrait.jpg';
-import illustration5 from '../Assets/magical_portal.png';
-import illustration6 from '../Assets/star_machine.png';
-import illustration7 from '../Assets/mei_portrait.jpg';
-import illustration8 from '../Assets/fungi_girls.png';
-import illustration9 from '../Assets/star_machine.png';
-import illustration10 from '../Assets/mei_portrait.jpg';
-import illustration11 from '../Assets/fungi_girls.png';
-import illustration12 from '../Assets/magical_portal.png';
-import illustration13 from '../Assets/star_machine.png';
-import illustration14 from '../Assets/mei_portrait.jpg';
-import illustration15 from '../Assets/magical_portal.png';
+import illustration1 from '../Assets/fungi_girls.webp';
+import illustration2 from '../Assets/magical_portal.webp';
+import illustration3 from '../Assets/star_machine.webp';
+import illustration4 from '../Assets/mei_portrait.webp';
+import illustration5 from '../Assets/magical_portal.webp';
+import illustration6 from '../Assets/star_machine.webp';
+import illustration7 from '../Assets/mei_portrait.webp';
+import illustration8 from '../Assets/fungi_girls.webp';
+import illustration9 from '../Assets/star_machine.webp';
+import illustration10 from '../Assets/mei_portrait.webp';
+import illustration11 from '../Assets/fungi_girls.webp';
+import illustration12 from '../Assets/magical_portal.webp';
+import illustration13 from '../Assets/star_machine.webp';
+import illustration14 from '../Assets/mei_portrait.webp';
+import illustration15 from '../Assets/magical_portal.webp';
 
 interface ImageData {
   id: number;
