@@ -24,6 +24,10 @@ interface ImageData {
   title?: string;
 }
 
+interface GalleryProps {
+  galleryTitle?: string;
+}
+
 const galleryImages: ImageData[] = [
   { id: 1, src: illustration1, alt: 'Illustration 1', title: 'Artwork 1' },
   { id: 2, src: illustration2, alt: 'Illustration 2', title: 'Artwork 2' },
@@ -42,7 +46,7 @@ const galleryImages: ImageData[] = [
   { id: 15, src: illustration15, alt: 'Illustration 15', title: 'Artwork 15' },
 ];
 
-const Gallery: React.FC = () => {
+const Gallery: React.FC<GalleryProps> = ({ galleryTitle = "Original Illustrations" }) => {
   const [visibleImages, setVisibleImages] = useState<Set<number>>(new Set());
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
@@ -74,7 +78,7 @@ const Gallery: React.FC = () => {
   return (
     <div className="gallery-container">
       <div className="gallery-header">
-        <h1 className="gallery-title">Original Illustrations</h1>
+        <h1 className="gallery-title">{galleryTitle}</h1>
       </div>
 
       <div className="gallery-grid">
