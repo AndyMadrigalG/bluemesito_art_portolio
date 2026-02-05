@@ -1,7 +1,7 @@
 # Bluemesito Art Portfolio
 A modern, responsive art portfolio website built with React, showcasing the creative work of Bluemesito
 
-## 🎨 About
+## About
 
 This is a portfolio website featuring:
 - **Gallery Homepage**: Showcasing different art categories
@@ -10,19 +10,19 @@ This is a portfolio website featuring:
 - **Responsive Design**: Optimized for mobile, tablet, and desktop viewing
 - **Social Media Integration**: Quick links to DeviantArt, Instagram, and Pixiv
 
-## 🛠️ Built With
+## Built With
 
 - **React 19** - Frontend framework
 - **TypeScript** - Type-safe JavaScript
 - **React Router DOM** - Client-side routing
 - **CSS3** - Custom styling with CSS variables
 
-## 📋 Prerequisites
+## Prerequisites
 
 - Node.js (v16 or higher recommended)
 - npm (comes with Node.js)
 
-## 💻 Local Setup
+## Local Setup
 
 1. Clone the repository and go into that folder:
 
@@ -57,11 +57,11 @@ This is a portfolio website featuring:
     Runs the app in the prod environment, the page will use `build` folder. Open [http://localhost:4000](http://localhost:4000) to view it in the browser
 
 
-## 🚀 Deployment
+## Deployment
 
 The process to deploy into production has been automated with GitHub Actions\
 Every time we merge new changes to the `main` branch, its being deployed to the production environment
 
-## ⭐ Live in Production
+## Live in Production
 
 Visit [https://bluemesito.com](https://bluemesito.com)

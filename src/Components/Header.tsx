@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'; // IMPORTANTE: Importar Link
 import './Header.css';
-import main_logo from '../Assets/main_logo.png';
-import { ReactComponent as DevianArtIcon } from '../Assets/deviantart.svg';
-import { ReactComponent as InstagramIcon } from '../Assets/instagram.svg';
-import { ReactComponent as PixivIcon } from '../Assets/pixiv.svg';
+import main_logo from '../Assets/images/main_logo.webp';
+import { ReactComponent as DevianArtIcon } from '../Assets/logos/deviantart.svg';
+import { ReactComponent as InstagramIcon } from '../Assets/logos/instagram.svg';
+import { ReactComponent as PixivIcon } from '../Assets/logos/pixiv.svg';
 
 const Header: React.FC = () => {
     // Estado para controlar si el menú lateral está abierto
