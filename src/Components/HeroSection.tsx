@@ -1,9 +1,9 @@
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
-import mei_portrait from '../Assets/mei_portrait.webp';
-import fungi_girls from '../Assets/fungi_girls.webp';
-import magical_portal from '../Assets/magical_portal.webp';
-import star_machine from '../Assets/star_machine.webp';
+import mei_portrait from '../Assets/images/mei_portrait.webp';
+import fungi_girls from '../Assets/images/fungi_girls.webp';
+import magical_portal from '../Assets/images/magical_portal.webp';
+import star_machine from '../Assets/images/star_machine.webp';
 
 const galleryItems = [
     { id: 1, image_source: fungi_girls, description: 'ILLUSTRATIONS' },

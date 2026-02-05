@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 // Usamos una imagen existente como placeholder, cámbiala por la foto de ella
-import profileImg from '../Assets/mei_portrait.jpg'; 
+import profileImg from '../Assets/images/mei_portrait.webp'; 
 
 const About: React.FC = () => {
   return (
