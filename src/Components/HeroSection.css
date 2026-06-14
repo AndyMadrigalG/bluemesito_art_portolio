@@ -1,4 +1,3 @@
-@import '../global_variables.css';
 
 /* Hero Section */
 .hero {
@@ -51,8 +50,8 @@
   padding: 16px;
   background: linear-gradient(
     180deg,
-    var(--color_hero_gradient_start),
-    var(--color_hero_gradient_end)
+    var(--color_gradient_start),
+    var(--color_gradient_end)
   );
   border-radius: 20px;
   backdrop-filter: blur(4px);
