@@ -5,8 +5,8 @@
   --color_secondary: #4A90E2;         /* Azul intermedio */
  
   /* Colores del hero section */
-  --color_hero_gradient_start: #E0F1FD;  /* Azul muy claro del gradiente */
-  --color_hero_gradient_end: #FDEAEA;    /* Rosa pálido del gradiente */
+  --color_gradient_start: #E0F1FD;  /* Azul muy claro del gradiente */
+  --color_gradient_end: #FDEAEA;    /* Rosa pálido del gradiente */
   --color_hero_shadow_dark: rgba(92, 160, 240, 0.25); /* Sombra con tinte azul */
 
   /* Colores secundarios */
@@ -15,4 +15,5 @@
   --color_contact_text: #5CA0F0;         /* color_primary Azul vibrante */
   --color_footer: #FFFFFF;               /* Blanco para el footer */
   --color_shadow: rgba(92, 160, 240, 0.2); /* Sombras con tinte azul suave */
+  --color_textinput_shadow: rgba(146, 127, 253, 0.2); /* Sombra con tinte lila suave */
 }

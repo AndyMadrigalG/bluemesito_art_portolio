@@ -1,4 +1,3 @@
-@import '../global_variables.css';
 
 .gallery-container {
   max-width: 1400px;
@@ -37,7 +36,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  background: linear-gradient(135deg, var(--color_hero_gradient_start), var(--color_hero_gradient_end));
+  background: linear-gradient(135deg, var(--color_gradient_start), var(--color_gradient_end));
   box-shadow: 0 4px 15px var(--color_shadow);
  
   /* Estado inicial para la animación (invisible) */
@@ -163,17 +162,5 @@
 
   .gallery-item:hover {
     transform: none;
-  }
-}
-
-/* Animación de entrada escalonada */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(40px) scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0) scale(1);
   }
 }
