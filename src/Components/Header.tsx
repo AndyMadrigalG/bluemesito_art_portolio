@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import main_logo from '../Assets/images/main_logo.webp';
+import { image_main_logo } from '../Data/galleries';
 import { ReactComponent as DevianArtIcon } from '../Assets/logos/deviantart.svg';
 import { ReactComponent as InstagramIcon } from '../Assets/logos/instagram.svg';
 import { ReactComponent as PixivIcon } from '../Assets/logos/pixiv.svg';
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
             {/* Logo Section */}
             <div className="header__logo">
                 <Link to="/" onClick={closeMenu}>
-                    <img src={main_logo} alt="Blue Mesito Logo" className="header__logo-image" />
+                    <img src={image_main_logo} alt="Blue Mesito Logo" className="header__logo-image" />
                 </Link>
             </div>
 

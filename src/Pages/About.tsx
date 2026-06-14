@@ -1,13 +1,12 @@
 import React from 'react';
 import './About.css';
-
-import profile_image from '../Assets/images/illustrations/Girl.png';
+import { image_profile_girl } from '../Data/galleries';
 
 const About: React.FC = () => {
   return (
     <div className="about-container" id="about">
       <div className="about-image-wrapper">
-        <img src={profile_image} alt="Artist Portrait" className="about-image" />
+        <img src={image_profile_girl} alt="Artist Portrait" className="about-image" />
       </div>
       
       <div className="about-content">
