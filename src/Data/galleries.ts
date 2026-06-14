@@ -1,9 +1,16 @@
-import image_fungi_girls    from '../Assets/images/fungi_girls.webp';
-import image_magical_portal from '../Assets/images/magical_portal.webp';
-import image_star_machine   from '../Assets/images/star_machine.webp';
-import image_mei_portrait   from '../Assets/images/mei_portrait.webp';
+import image_fungi_girls    from '../Assets/images/illustrations/fungi_girls.webp';
+import image_magical_portal from '../Assets/images/illustrations/magical_portal.webp';
+import image_star_machine   from '../Assets/images/illustrations/star_machine.webp';
+import image_mei_portrait   from '../Assets/images/pets/mei_portrait.webp';
 
 import { Artwork } from '../Types';
+
+export { 
+    image_fungi_girls, 
+    image_magical_portal, 
+    image_mei_portrait, 
+    image_star_machine 
+};
 
 export const galleries: Record<string, { title: string; images: Artwork[] }> = {
     'illustrations': { title: "Original Illustrations",

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Contact.css';
-// Usamos star_machine como placeholder de la ilustración decorativa
-import contact_illustration from '../Assets/images/starmachine_transparent.webp'; 
+
+import contact_illustration from '../Assets/images/illustrations/starmachine_transparent.webp'; 
 
 const Contact: React.FC = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // IMPORTANTE: Importar Link
+import { Link } from 'react-router-dom';
 import './Header.css';
 import main_logo from '../Assets/images/main_logo.webp';
 import { ReactComponent as DevianArtIcon } from '../Assets/logos/deviantart.svg';
