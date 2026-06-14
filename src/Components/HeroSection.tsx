@@ -1,12 +1,12 @@
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
-import { image_fungi_girls, image_magical_portal, image_mei_mei, image_star_machine } from '../Data/galleries';
+import { image_fungi_girls, image_mei_mei, image_inktober_2025_rowlet, image_two_demons } from '../Data/galleries';
 
 const galleryItems = [
     { id: 1, image_source: image_fungi_girls, description: 'ILLUSTRATIONS', link: '/gallery/illustrations' },
     { id: 2, image_source: image_mei_mei, description: 'PETS', link: '/gallery/pets' },
-    { id: 3, image_source: image_magical_portal, description: 'FANARTS', link: '/gallery/fanarts' },
-    { id: 4, image_source: image_star_machine, description: 'SKETCHES', link: '/gallery/sketches' },
+    { id: 3, image_source: image_inktober_2025_rowlet, description: 'FANARTS', link: '/gallery/fanarts' },
+    { id: 4, image_source: image_two_demons, description: 'SKETCHES', link: '/gallery/sketches' },
 ];
 
 const HeroSection = () => {

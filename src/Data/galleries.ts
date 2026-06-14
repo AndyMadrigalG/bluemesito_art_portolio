@@ -37,7 +37,14 @@ import image_jirachi_high           from '../Assets/images/fanarts/jirachi_high.
 import image_meloeta_miku_high      from '../Assets/images/fanarts/meloeta_miku_high.png';
 
 // gallery images for sketches
-
+import image_two_demons                 from '../Assets/images/sketches/two_demons.png';
+import image_fish                       from '../Assets/images/sketches/fish.png';
+import image_hongos                     from '../Assets/images/sketches/hongos.png';
+import image_miku                       from '../Assets/images/sketches/miku.png';
+import image_maid_whitney               from '../Assets/images/sketches/maid_whitney.png';
+import image_pocket_camp_lineart        from '../Assets/images/sketches/pocket_camp_lineart.png';
+import image_pocket_camp_color          from '../Assets/images/sketches/pocket_camp_color.png';
+import image_michi_blueflowers_lineart  from '../Assets/images/sketches/michi_blueflowers_lineart.png';
 
 import { Artwork } from '../Types';
 
@@ -50,9 +57,9 @@ export {
     image_contact,
     // images for main page gallery
     image_fungi_girls,
-    image_magical_portal,
     image_mei_mei,
-    image_star_machine,
+    image_inktober_2025_rowlet,
+    image_two_demons,
 };
 
 export const galleries: Record<string, { title: string; images: Artwork[] }> = {
@@ -94,11 +101,14 @@ export const galleries: Record<string, { title: string; images: Artwork[] }> = {
     },
     'sketches': { title: "Sketches",
         images: [
-            { id: 1, source: image_fungi_girls, alt: 'Sketch 1', title: 'Sketch 1' },
-            { id: 2, source: image_magical_portal, alt: 'Sketch 2', title: 'Sketch 2' },
-            { id: 3, source: image_star_machine, alt: 'Sketch 3', title: 'Sketch 3' },
-            { id: 4, source: image_mei_mei, alt: 'Sketch 4', title: 'Sketch 4' },
-            { id: 5, source: image_fungi_girls, alt: 'Sketch 5', title: 'Sketch 5' },
+            { id: 1, source: image_two_demons, alt: 'Two Demons', title: 'Two Demons' },
+            { id: 2, source: image_miku, alt: 'Miku', title: 'Miku' }, 
+            { id: 3, source: image_hongos, alt: 'Hongos', title: 'Hongos' },
+            { id: 4, source: image_maid_whitney, alt: 'Maid Whitney', title: 'Maid Whitney' },
+            { id: 5, source: image_pocket_camp_color, alt: 'Pocket Camp Color', title: 'Pocket Camp Color' },
+            { id: 6, source: image_pocket_camp_lineart, alt: 'Pocket Camp Lineart', title: 'Pocket Camp Lineart' },
+            { id: 7, source: image_fish, alt: 'Fish', title: 'Fish' },
+            { id: 8, source: image_michi_blueflowers_lineart, alt: 'Michi Blueflowers Lineart', title: 'Michi Blueflowers Lineart' },
         ]
     }
 };
