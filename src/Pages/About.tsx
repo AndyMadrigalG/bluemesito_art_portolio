@@ -1,13 +1,12 @@
 import React from 'react';
 import './About.css';
-// Usamos una imagen existente como placeholder, cámbiala por la foto de ella
-import profileImg from '../Assets/images/mei_portrait.webp'; 
+import { image_profile_girl } from '../Data/galleries';
 
 const About: React.FC = () => {
   return (
     <div className="about-container" id="about">
       <div className="about-image-wrapper">
-        <img src={profileImg} alt="Artist Portrait" className="about-image" />
+        <img src={image_profile_girl} alt="Artist Portrait" className="about-image" />
       </div>
       
       <div className="about-content">

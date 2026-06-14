@@ -1,15 +1,12 @@
 import './HeroSection.css';
 import { Link } from 'react-router-dom';
-import mei_portrait from '../Assets/images/mei_portrait.webp';
-import fungi_girls from '../Assets/images/fungi_girls.webp';
-import magical_portal from '../Assets/images/magical_portal.webp';
-import star_machine from '../Assets/images/star_machine.webp';
+import { image_fungi_girls, image_mei_mei, image_inktober_2025_rowlet, image_two_demons } from '../Data/galleries';
 
 const galleryItems = [
-    { id: 1, image_source: fungi_girls, description: 'ILLUSTRATIONS', link: '/gallery/illustrations' },
-    { id: 2, image_source: mei_portrait, description: 'PETS', link: '/gallery/pets' },
-    { id: 3, image_source: magical_portal, description: 'FANARTS', link: '/gallery/fanarts' },
-    { id: 4, image_source: star_machine, description: 'SKETCHES', link: '/gallery/sketches' },
+    { id: 1, image_source: image_fungi_girls, description: 'ILLUSTRATIONS', link: '/gallery/illustrations' },
+    { id: 2, image_source: image_mei_mei, description: 'PETS', link: '/gallery/pets' },
+    { id: 3, image_source: image_inktober_2025_rowlet, description: 'FANARTS', link: '/gallery/fanarts' },
+    { id: 4, image_source: image_two_demons, description: 'SKETCHES', link: '/gallery/sketches' },
 ];
 
 const HeroSection = () => {

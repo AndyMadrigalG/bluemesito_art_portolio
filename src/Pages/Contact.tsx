@@ -1,7 +1,6 @@
 import React from 'react';
 import './Contact.css';
-// Usamos star_machine como placeholder de la ilustración decorativa
-import contact_illustration from '../Assets/images/starmachine_transparent.webp'; 
+import { image_contact } from '../Data/galleries';
 
 const Contact: React.FC = () => {
   return (
@@ -38,7 +37,7 @@ const Contact: React.FC = () => {
 
       {/* Columna Derecha: Ilustración */}
       <div className="contact-image-wrapper">
-        <img src={contact_illustration} alt="Decorative illustration" className="contact-illustration" />
+        <img src={image_contact} alt="Decorative illustration" className="contact-illustration" />
       </div>
 
     </div>
