@@ -8,8 +8,6 @@ interface GalleryProps {
   galleryImages?: Artwork[]; // Permite pasar un array de artworks
 }
 
-
-
 const Gallery: React.FC<GalleryProps> = ({ galleryTitle, galleryImages }) => {
   const [visibleImages, setVisibleImages] = useState<Set<number>>(new Set());
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);

@@ -15,7 +15,6 @@ const NotFound: React.FC = () => {
               Back to Home
             </Link>
           </div>
-         
         </div>
       </div>
     </section>
