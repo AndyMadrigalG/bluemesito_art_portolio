@@ -6,7 +6,7 @@ import image_mei_portrait   from '../Assets/images/mei_portrait.webp';
 import { Artwork } from '../Types';
 
 export const galleries: Record<string, { title: string; images: Artwork[] }> = {
-    'original-illustrations': { title: "Original Illustrations",
+    'illustrations': { title: "Original Illustrations",
         images: [
             { id: 1, source: image_fungi_girls, alt: 'Illustration 1', title: 'Artwork 1' },
             { id: 2, source: image_magical_portal, alt: 'Illustration 2', title: 'Artwork 2' },
@@ -25,7 +25,7 @@ export const galleries: Record<string, { title: string; images: Artwork[] }> = {
             { id: 15, source: image_star_machine, alt: 'Illustration 15', title: 'Artwork 15' },
         ]
     },
-    'animal-characters': { title: "Animal Characters",
+    'pets': { title: "Pets",
         images: [
             { id: 1, source: image_fungi_girls, alt: 'Animal Character 1', title: 'Animal Character 1' },
             { id: 2, source: image_magical_portal, alt: 'Animal Character 2', title: 'Animal Character 2' },

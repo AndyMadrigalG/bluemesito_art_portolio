@@ -6,10 +6,10 @@ import magical_portal from '../Assets/images/magical_portal.webp';
 import star_machine from '../Assets/images/star_machine.webp';
 
 const galleryItems = [
-    { id: 1, image_source: fungi_girls, description: 'ILLUSTRATIONS', link: '/illustrations' },
-    { id: 2, image_source: mei_portrait, description: 'ANIMAL CHARACTERS', link: '/animal-characters' },
-    { id: 3, image_source: magical_portal, description: 'FANARTS', link: '/fanarts' },
-    { id: 4, image_source: star_machine, description: 'SKETCHES', link: '/sketches' },
+    { id: 1, image_source: fungi_girls, description: 'ILLUSTRATIONS', link: '/gallery/illustrations' },
+    { id: 2, image_source: mei_portrait, description: 'PETS', link: '/gallery/pets' },
+    { id: 3, image_source: magical_portal, description: 'FANARTS', link: '/gallery/fanarts' },
+    { id: 4, image_source: star_machine, description: 'SKETCHES', link: '/gallery/sketches' },
 ];
 
 const HeroSection = () => {
