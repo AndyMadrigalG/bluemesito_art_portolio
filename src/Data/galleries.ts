@@ -67,7 +67,7 @@ export const galleries: Record<string, { title: string; images: Artwork[] }> = {
         images: [
             { id: 1, source: image_profile_girl, alt: 'Winged Girl', title: 'Winged Girl' },
             { id: 2, source: image_star_machine, alt: 'Star Machine', title: 'Star Machine' },
-            { id: 4, source: image_fungi_girls, alt: 'Fungi Girls', title: 'Fungi Girls' },
+            { id: 3, source: image_fungi_girls, alt: 'Fungi Girls', title: 'Fungi Girls' },
             { id: 4, source: image_ba_tacogirl, alt: 'Tako Girl', title: 'Tako Girl' },
             { id: 5, source: image_chica_rosa, alt: 'Chica Rosa', title: 'Chica Rosa' },
             { id: 6, source: image_magical_portal, alt: 'Magical Portal', title: 'Magical Portal' },
