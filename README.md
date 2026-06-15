@@ -19,8 +19,8 @@ This is a portfolio website featuring:
 
 ## Prerequisites
 
-- Node.js (v16 or higher recommended)
-- npm (comes with Node.js)
+- Node.js (v22 or higher recommended)
+- npm (v10 or higher - comes with Node.js)
 
 ## Local Setup
 
