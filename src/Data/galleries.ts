@@ -52,13 +52,13 @@ export {
     // general images
     image_main_logo,
     // images for about page
-    image_profile_girl,
+    image_mei_mei,
     // images for contact page
     image_contact,
     // images for main page gallery
-    image_fungi_girls,
-    image_mei_mei,
-    image_inktober_2025_rowlet,
+    image_profile_girl,
+    image_exotic,
+    image_jirachi_high,
     image_two_demons,
 };
 
