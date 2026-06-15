@@ -2,10 +2,9 @@ import React, { useEffect, useRef, useState } from 'react';
 import './Gallery.css';
 import { Artwork } from '../Types';
 
-
 interface GalleryProps {
   galleryTitle?: string;
-  galleryImages?: Artwork[]; // Permite pasar un array de artworks
+  galleryImages?: Artwork[];
 }
 
 const Gallery: React.FC<GalleryProps> = ({ galleryTitle, galleryImages }) => {
@@ -13,20 +12,29 @@ const Gallery: React.FC<GalleryProps> = ({ galleryTitle, galleryImages }) => {
   const imageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
+    // Al cambiar de galería, reiniciamos las imágenes visibles
+    setVisibleImages(new Set());
+   
+    // Limpiamos y reajustamos el tamaño de la matriz de referencias actuales
+    imageRefs.current = imageRefs.current.slice(0, galleryImages?.length || 0);
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             const imageId = Number(entry.target.getAttribute('data-id'));
-            setVisibleImages((prev) => new Set(prev).add(imageId));
-            // Una vez visible, dejamos de observar para mejor performance
+            setVisibleImages((prev) => {
+              const next = new Set(prev);
+              next.add(imageId);
+              return next;
+            });
             observer.unobserve(entry.target);
           }
         });
       },
       {
         threshold: 0.05, // Menor threshold para detectar antes
-        rootMargin: '100px', // Cargar antes de que llegue al viewport
+        rootMargin: '100px',
       }
     );
 
@@ -35,7 +43,7 @@ const Gallery: React.FC<GalleryProps> = ({ galleryTitle, galleryImages }) => {
     });
 
     return () => observer.disconnect();
-  }, []);
+  }, [galleryImages]); // <-- Escucha los cambios cuando cambias de categoría
 
   return (
     <div className="gallery-container">
@@ -46,7 +54,7 @@ const Gallery: React.FC<GalleryProps> = ({ galleryTitle, galleryImages }) => {
       <div className="gallery-grid">
         {galleryImages?.map((image, index) => (
           <div
-            key={image.id}
+            key={`${image.id}`} // LLave única
             ref={(el) => { imageRefs.current[index] = el; }}
             data-id={image.id}
             className={`gallery-item ${visibleImages.has(image.id) ? 'visible' : ''}`}
