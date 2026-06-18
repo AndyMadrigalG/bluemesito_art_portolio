@@ -2,12 +2,13 @@
 import image_main_logo      from '../Assets/images/main_logo.webp';
 
 // images for about page
-import image_profile_girl   from '../Assets/images/about/Girl.webp';
+import image_about_mei_mei  from '../Assets/images/about/mei_mei.webp';
 
 // images for contact page
 import image_contact        from '../Assets/images/contact/starmachine_transparent.webp';
 
 // gallery images for illustrations
+import image_winged_girl    from '../Assets/images/illustrations/Girl.webp';
 import image_ba_tacogirl    from '../Assets/images/illustrations/ba_tacogirl.webp';
 import image_fungi_girls    from '../Assets/images/illustrations/fungi_girls.webp';
 import image_magical_portal from '../Assets/images/illustrations/magical_portal.webp';
@@ -52,11 +53,11 @@ export {
     // general images
     image_main_logo,
     // images for about page
-    image_mei_mei,
+    image_about_mei_mei,
     // images for contact page
     image_contact,
     // images for main page gallery
-    image_profile_girl,
+    image_winged_girl,
     image_exotic,
     image_jirachi_high,
     image_two_demons,
@@ -65,7 +66,7 @@ export {
 export const galleries: Record<string, { title: string; images: Artwork[] }> = {
     'illustrations': { title: "Original Illustrations",
         images: [
-            { id: 1, source: image_profile_girl, alt: 'Winged Girl', title: 'Winged Girl' },
+            { id: 1, source: image_winged_girl, alt: 'Winged Girl', title: 'Winged Girl' },
             { id: 2, source: image_star_machine, alt: 'Star Machine', title: 'Star Machine' },
             { id: 3, source: image_fungi_girls, alt: 'Fungi Girls', title: 'Fungi Girls' },
             { id: 4, source: image_ba_tacogirl, alt: 'Tako Girl', title: 'Tako Girl' },
