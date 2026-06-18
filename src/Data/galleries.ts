@@ -2,49 +2,49 @@
 import image_main_logo      from '../Assets/images/main_logo.webp';
 
 // images for about page
-import image_profile_girl   from '../Assets/images/about/Girl.png';
+import image_profile_girl   from '../Assets/images/about/Girl.webp';
 
 // images for contact page
 import image_contact        from '../Assets/images/contact/starmachine_transparent.webp';
 
 // gallery images for illustrations
-import image_ba_tacogirl    from '../Assets/images/illustrations/ba_tacogirl.png';
+import image_ba_tacogirl    from '../Assets/images/illustrations/ba_tacogirl.webp';
 import image_fungi_girls    from '../Assets/images/illustrations/fungi_girls.webp';
 import image_magical_portal from '../Assets/images/illustrations/magical_portal.webp';
 import image_star_machine   from '../Assets/images/illustrations/star_machine.webp';
-import image_may            from '../Assets/images/illustrations/may.png';
-import image_chica_rosa     from '../Assets/images/illustrations/chica_rosa.png';
-import image_autumn         from '../Assets/images/illustrations/autumn.png';
+import image_may            from '../Assets/images/illustrations/may.webp';
+import image_chica_rosa     from '../Assets/images/illustrations/chica_rosa.webp';
+import image_autumn         from '../Assets/images/illustrations/autumn.webp';
 
 // gallery images for pets
-import image_mei_mei        from '../Assets/images/pets/mei_mei.png';
-import image_cookie         from '../Assets/images/pets/cookie.png';
-import image_backpack       from '../Assets/images/pets/backpack.png'; 
-import image_beach_neko     from '../Assets/images/pets/beach_neko.png';
-import image_drive          from '../Assets/images/pets/drive.png'; 
-import image_exotic         from '../Assets/images/pets/exotic.png'; 
-import image_trek           from '../Assets/images/pets/trek.png';
-import image_violin         from '../Assets/images/pets/violin.png';
+import image_mei_mei        from '../Assets/images/pets/mei_mei.webp';
+import image_cookie         from '../Assets/images/pets/cookie.webp';
+import image_backpack       from '../Assets/images/pets/backpack.webp'; 
+import image_beach_neko     from '../Assets/images/pets/beach_neko.webp';
+import image_drive          from '../Assets/images/pets/drive.webp'; 
+import image_exotic         from '../Assets/images/pets/exotic.webp'; 
+import image_trek           from '../Assets/images/pets/trek.webp';
+import image_violin         from '../Assets/images/pets/violin.webp';
 
 // gallery images for fanarts
-import image_inktober_2025_rowlet   from '../Assets/images/fanarts/inktober_2025_rowlet.png';
-import image_mega_Altaria_high      from '../Assets/images/fanarts/mega_Altaria_high.png';
-import image_darkrai_high           from '../Assets/images/fanarts/darkrai_high.png';
-import image_dragon_high            from '../Assets/images/fanarts/dragon_high.png';
-import image_pikachu_high           from '../Assets/images/fanarts/pikachu_high.png';
-import image_mimikyu_high           from '../Assets/images/fanarts/mimikyu_high.png';
-import image_jirachi_high           from '../Assets/images/fanarts/jirachi_high.png';
-import image_meloeta_miku_high      from '../Assets/images/fanarts/meloeta_miku_high.png';
+import image_inktober_2025_rowlet   from '../Assets/images/fanarts/inktober_2025_rowlet.webp';
+import image_mega_Altaria_high      from '../Assets/images/fanarts/mega_Altaria_high.webp';
+import image_darkrai_high           from '../Assets/images/fanarts/darkrai_high.webp';
+import image_dragon_high            from '../Assets/images/fanarts/dragon_high.webp';
+import image_pikachu_high           from '../Assets/images/fanarts/pikachu_high.webp';
+import image_mimikyu_high           from '../Assets/images/fanarts/mimikyu_high.webp';
+import image_jirachi_high           from '../Assets/images/fanarts/jirachi_high.webp';
+import image_meloeta_miku_high      from '../Assets/images/fanarts/meloeta_miku_high.webp';
 
 // gallery images for sketches
-import image_two_demons                 from '../Assets/images/sketches/two_demons.png';
-import image_fish                       from '../Assets/images/sketches/fish.png';
-import image_hongos                     from '../Assets/images/sketches/hongos.png';
-import image_miku                       from '../Assets/images/sketches/miku.png';
-import image_maid_whitney               from '../Assets/images/sketches/maid_whitney.png';
-import image_pocket_camp_lineart        from '../Assets/images/sketches/pocket_camp_lineart.png';
-import image_pocket_camp_color          from '../Assets/images/sketches/pocket_camp_color.png';
-import image_michi_blueflowers_lineart  from '../Assets/images/sketches/michi_blueflowers_lineart.png';
+import image_two_demons                 from '../Assets/images/sketches/two_demons.webp';
+import image_fish                       from '../Assets/images/sketches/fish.webp';
+import image_hongos                     from '../Assets/images/sketches/hongos.webp';
+import image_miku                       from '../Assets/images/sketches/miku.webp';
+import image_maid_whitney               from '../Assets/images/sketches/maid_whitney.webp';
+import image_pocket_camp_lineart        from '../Assets/images/sketches/pocket_camp_lineart.webp';
+import image_pocket_camp_color          from '../Assets/images/sketches/pocket_camp_color.webp';
+import image_michi_blueflowers_lineart  from '../Assets/images/sketches/michi_blueflowers_lineart.webp';
 
 import { Artwork } from '../Types';
 
