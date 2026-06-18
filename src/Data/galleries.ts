@@ -52,13 +52,13 @@ export {
     // general images
     image_main_logo,
     // images for about page
-    image_profile_girl,
+    image_mei_mei,
     // images for contact page
     image_contact,
     // images for main page gallery
-    image_fungi_girls,
-    image_mei_mei,
-    image_inktober_2025_rowlet,
+    image_profile_girl,
+    image_exotic,
+    image_jirachi_high,
     image_two_demons,
 };
 
@@ -67,7 +67,7 @@ export const galleries: Record<string, { title: string; images: Artwork[] }> = {
         images: [
             { id: 1, source: image_profile_girl, alt: 'Winged Girl', title: 'Winged Girl' },
             { id: 2, source: image_star_machine, alt: 'Star Machine', title: 'Star Machine' },
-            { id: 4, source: image_fungi_girls, alt: 'Fungi Girls', title: 'Fungi Girls' },
+            { id: 3, source: image_fungi_girls, alt: 'Fungi Girls', title: 'Fungi Girls' },
             { id: 4, source: image_ba_tacogirl, alt: 'Tako Girl', title: 'Tako Girl' },
             { id: 5, source: image_chica_rosa, alt: 'Chica Rosa', title: 'Chica Rosa' },
             { id: 6, source: image_magical_portal, alt: 'Magical Portal', title: 'Magical Portal' },
@@ -77,38 +77,38 @@ export const galleries: Record<string, { title: string; images: Artwork[] }> = {
     },
     'pets': { title: "Pets",
         images: [
-            { id: 1, source: image_cookie, alt: 'Cookie', title: 'Cookie' },
-            { id: 2, source: image_violin, alt: 'Violin', title: 'Violin' },
-            { id: 3, source: image_exotic, alt: 'Exotic', title: 'Exotic' },
-            { id: 4, source: image_beach_neko, alt: 'Beach Neko', title: 'Beach Neko' },
-            { id: 5, source: image_trek, alt: 'Trek', title: 'Trek' },
-            { id: 6, source: image_backpack, alt: 'Backpack', title: 'Backpack' },            
-            { id: 7, source: image_mei_mei, alt: 'Mei Mei', title: 'Mei Mei' },            
-            { id: 8, source: image_drive, alt: 'Drive', title: 'Drive' },
+            { id: 9, source: image_cookie, alt: 'Cookie', title: 'Cookie' },
+            { id: 10, source: image_violin, alt: 'Violin', title: 'Violin' },
+            { id: 11, source: image_exotic, alt: 'Exotic', title: 'Exotic' },
+            { id: 12, source: image_beach_neko, alt: 'Beach Neko', title: 'Beach Neko' },
+            { id: 13, source: image_trek, alt: 'Trek', title: 'Trek' },
+            { id: 14, source: image_backpack, alt: 'Backpack', title: 'Backpack' },            
+            { id: 15, source: image_mei_mei, alt: 'Mei Mei', title: 'Mei Mei' },            
+            { id: 16, source: image_drive, alt: 'Drive', title: 'Drive' },
         ]
     },
     'fanarts': { title: "Fanarts",
         images: [
-            { id: 1, source: image_darkrai_high, alt: 'Darkrai', title: 'Darkrai' },
-            { id: 2, source: image_inktober_2025_rowlet, alt: 'Inktober 2025 Rowlet', title: 'Inktober 2025 Rowlet' },
-            { id: 3, source: image_mega_Altaria_high, alt: 'Mega Altaria', title: 'Mega Altaria' },
-            { id: 4, source: image_mimikyu_high, alt: 'Mimikyu', title: 'Mimikyu' },
-            { id: 5, source: image_pikachu_high, alt: 'Pikachu', title: 'Pikachu' },
-            { id: 6, source: image_jirachi_high, alt: 'Jirachi', title: 'Jirachi' },
-            { id: 7, source: image_dragon_high, alt: 'Dragon', title: 'Dragon' },
-            { id: 8, source: image_meloeta_miku_high, alt: 'Meloeta Miku', title: 'Meloeta Miku' },
+            { id: 17, source: image_darkrai_high, alt: 'Darkrai', title: 'Darkrai' },
+            { id: 18, source: image_inktober_2025_rowlet, alt: 'Inktober 2025 Rowlet', title: 'Inktober 2025 Rowlet' },
+            { id: 19, source: image_mega_Altaria_high, alt: 'Mega Altaria', title: 'Mega Altaria' },
+            { id: 20, source: image_mimikyu_high, alt: 'Mimikyu', title: 'Mimikyu' },
+            { id: 21, source: image_pikachu_high, alt: 'Pikachu', title: 'Pikachu' },
+            { id: 22, source: image_jirachi_high, alt: 'Jirachi', title: 'Jirachi' },
+            { id: 23, source: image_dragon_high, alt: 'Dragon', title: 'Dragon' },
+            { id: 24, source: image_meloeta_miku_high, alt: 'Meloeta Miku', title: 'Meloeta Miku' },
         ]
     },
     'sketches': { title: "Sketches",
         images: [
-            { id: 1, source: image_two_demons, alt: 'Two Demons', title: 'Two Demons' },
-            { id: 2, source: image_miku, alt: 'Miku', title: 'Miku' }, 
-            { id: 3, source: image_hongos, alt: 'Hongos', title: 'Hongos' },
-            { id: 4, source: image_maid_whitney, alt: 'Maid Whitney', title: 'Maid Whitney' },
-            { id: 5, source: image_pocket_camp_color, alt: 'Pocket Camp Color', title: 'Pocket Camp Color' },
-            { id: 6, source: image_pocket_camp_lineart, alt: 'Pocket Camp Lineart', title: 'Pocket Camp Lineart' },
-            { id: 7, source: image_fish, alt: 'Fish', title: 'Fish' },
-            { id: 8, source: image_michi_blueflowers_lineart, alt: 'Michi Blueflowers Lineart', title: 'Michi Blueflowers Lineart' },
+            { id: 25, source: image_two_demons, alt: 'Two Demons', title: 'Two Demons' },
+            { id: 26, source: image_miku, alt: 'Miku', title: 'Miku' }, 
+            { id: 27, source: image_hongos, alt: 'Hongos', title: 'Hongos' },
+            { id: 28, source: image_maid_whitney, alt: 'Maid Whitney', title: 'Maid Whitney' },
+            { id: 29, source: image_pocket_camp_color, alt: 'Pocket Camp Color', title: 'Pocket Camp Color' },
+            { id: 30, source: image_pocket_camp_lineart, alt: 'Pocket Camp Lineart', title: 'Pocket Camp Lineart' },
+            { id: 31, source: image_fish, alt: 'Fish', title: 'Fish' },
+            { id: 32, source: image_michi_blueflowers_lineart, alt: 'Michi Blueflowers Lineart', title: 'Michi Blueflowers Lineart' },
         ]
     }
 };
