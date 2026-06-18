@@ -1,8 +1,15 @@
-import React, { useState, ChangeEvent, FormEvent } from 'react';
+import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react';
 import './Contact.css';
 import { image_contact } from '../Data/galleries';
+import emailjs from '@emailjs/browser';
 
 const Contact: React.FC = () => {
+
+  // Al inicio del componente, inicializar EmailJS (una sola vez)
+  useEffect(() => {
+    emailjs.init('v3mjzla8tx18ftc_6'); // PUBLIC_KEY de emailjs.com
+  }, []);
+
   // Manejo de estado del formulario controlado
   const [formData, setFormData] = useState({
     name: '',
@@ -17,16 +24,26 @@ const Contact: React.FC = () => {
     });
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-   
-    // Aquí puedes integrar servicios como EmailJS
-    console.log('Datos enviados:', formData);
-   
-    alert(`¡Gracias ${formData.name}! Tu mensaje NO se ha sido enviado ya que esta parte está aun en construccion`);
-   
-    // Resetear formulario
-    setFormData({ name: '', email: '', message: '' });
+    
+    try {
+      await emailjs.send(
+        'service_whe1axn', // SERVICE_ID de emailjs.com
+        'template_4lptcql', // TEMPLATE_ID de emailjs.com
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+          to_email: 'bluemesito@gmail.com',
+          reply_to: formData.email
+        }
+      );
+      alert('¡Mensaje enviado con éxito!');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      alert('Error al enviar el mensaje');
+    }
   };
 
   return (
