@@ -23,7 +23,7 @@ import image_cookie         from '../Assets/images/pets/cookie.webp';
 import image_backpack       from '../Assets/images/pets/backpack.webp'; 
 import image_beach_neko     from '../Assets/images/pets/beach_neko.webp';
 import image_drive          from '../Assets/images/pets/drive.webp'; 
-import image_exotic         from '../Assets/images/pets/exotic.webp'; 
+import image_exotic_ajolote from '../Assets/images/pets/exotic_ajolote.webp'; 
 import image_trek           from '../Assets/images/pets/trek.webp';
 import image_violin         from '../Assets/images/pets/violin.webp';
 
@@ -58,7 +58,7 @@ export {
     image_contact,
     // images for main page gallery
     image_winged_girl,
-    image_exotic,
+    image_exotic_ajolote,
     image_jirachi_high,
     image_two_demons,
 };
@@ -80,7 +80,7 @@ export const galleries: Record<string, { title: string; images: Artwork[] }> = {
         images: [
             { id: 9, source: image_cookie, alt: 'Cookie', title: 'Cookie' },
             { id: 10, source: image_violin, alt: 'Violin', title: 'Violin' },
-            { id: 11, source: image_exotic, alt: 'Exotic', title: 'Exotic' },
+            { id: 11, source: image_exotic_ajolote, alt: 'Exotic Ajolote', title: 'Exotic Ajolote' },
             { id: 12, source: image_beach_neko, alt: 'Beach Neko', title: 'Beach Neko' },
             { id: 13, source: image_trek, alt: 'Trek', title: 'Trek' },
             { id: 14, source: image_backpack, alt: 'Backpack', title: 'Backpack' },            
