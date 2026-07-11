@@ -5,7 +5,6 @@ import HeroSection from './Components/HeroSection';
 import Footer from './Components/Footer';
 import NotFound from './Pages/NotFound';
 
-// @ts-ignore
 import './App.css';
 
 // Lazy load pages

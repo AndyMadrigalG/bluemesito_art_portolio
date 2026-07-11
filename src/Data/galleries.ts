@@ -47,7 +47,7 @@ import image_pocket_camp_lineart        from '../Assets/images/sketches/pocket_c
 import image_pocket_camp_color          from '../Assets/images/sketches/pocket_camp_color.webp';
 import image_michi_blueflowers_lineart  from '../Assets/images/sketches/michi_blueflowers_lineart.webp';
 
-import { Artwork } from '../Types';
+import { Artwork, CategoryType, GalleryCategory } from '../Types';
 
 export {
     // general images
@@ -63,7 +63,7 @@ export {
     image_two_demons,
 };
 
-export const galleries: Record<string, { title: string; images: Artwork[] }> = {
+export const galleries: Record<CategoryType, GalleryCategory> = {
     'illustrations': { title: "Original Illustrations",
         images: [
             { id: 1, source: image_winged_girl, alt: 'Winged Girl', title: 'Winged Girl' },
