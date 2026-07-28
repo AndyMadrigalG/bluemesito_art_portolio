@@ -12,8 +12,8 @@ export const useContactForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   useEffect(() => {
-    // Las llaves nunca deben estar en texto plano en el repositorio
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || 'v3mjzla8tx18ftc_6'; 
+    // The values for the email js configuration should be defined in a .env file at the root of the project
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY || ''; 
     emailjs.init(publicKey);
   }, []);
 
@@ -26,8 +26,8 @@ export const useContactForm = () => {
     setIsSubmitting(true);
     
     try {
-      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || 'service_whe1axn';
-      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || 'template_4lptcql';
+      const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID || '';
+      const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID || '';
 
       await emailjs.send(serviceId, templateId, {
         from_name: formData.name,
