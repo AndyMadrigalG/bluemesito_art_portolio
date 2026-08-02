@@ -18,6 +18,12 @@ jobs:
       with:
         node-version: '24'
 
+    - name: Generate .env file
+      run: |
+        echo "REACT_APP_EMAILJS_PUBLIC_KEY=${{ secrets.REACT_APP_EMAILJS_PUBLIC_KEY }}" >> .env
+        echo "REACT_APP_EMAILJS_SERVICE_ID=${{ secrets.REACT_APP_EMAILJS_SERVICE_ID }}" >> .env
+        echo "REACT_APP_EMAILJS_TEMPLATE_ID=${{ secrets.REACT_APP_EMAILJS_TEMPLATE_ID }}" >> .env
+
     - name: Install Dependencies (Runner)
       run: npm ci
 
