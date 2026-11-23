@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
-export const useIntersectionObserver = (dependencies: any[]) => {
-  const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set());
+export const useIntersectionObserver = (dependencies: unknown[]) => {
+  const [visibleItems, setVisibleItems] = useState<Set<string>>(new Set());
   const elementsRef = useRef<(HTMLDivElement | null)[]>([]);
 
   useEffect(() => {
@@ -11,8 +11,10 @@ export const useIntersectionObserver = (dependencies: any[]) => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            const itemId = Number(entry.target.getAttribute('data-id'));
-            setVisibleItems((prev) => new Set(prev).add(itemId));
+            const itemId = entry.target.getAttribute('data-id');
+            if (itemId) {
+              setVisibleItems((prev) => new Set(prev).add(itemId));
+            }
             observer.unobserve(entry.target);
           }
         });
