@@ -1,13 +1,18 @@
+
 export interface Artwork {
-  id: number;
-  source: string;
-  alt: string; // Texto alternativo/descripción para accesibilidad
-  title?: string;
+  id: string;
+  title: string;
+  alt: string;
+  thumbnailUrl: string;
+  fullUrl: string;
+  width: number;
+  height: number;
 }
 
 export type CategoryType = 'illustrations' | 'pets' | 'fanarts' | 'sketches';
+export type CatalogData = Record<CategoryType, Artwork[]>;
 
-export interface GalleryCategory {
+export interface CategoryMeta {
   title: string;
-  images: Artwork[];
+  coverUrl: string;
 }
