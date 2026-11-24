@@ -144,6 +144,8 @@ const Gallery: React.FC<GalleryProps> = ({ activeCategory, galleryTitle, gallery
               src={selectedArtwork.fullUrl}
               alt={selectedArtwork.alt}
               className="lightbox-image"
+              onContextMenu={(e) => e.preventDefault()}
+              onDragStart={(e) => e.preventDefault()}
             />
             <p className="lightbox-caption">{selectedArtwork.title}</p>
           </div>
